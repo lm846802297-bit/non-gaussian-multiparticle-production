@@ -1,18 +1,11 @@
 
-## 2026-11-22 — All 16 CTP contour components
+## 2026-11-22 — Phase IV: six-field source and Schwinger-Dyson residual
 
-- Implemented a branch-state overlap construction: each subset of field insertions is evolved on the forward branch, and the CTP correlator is the overlap of backward- and forward-branch subset states.
-- Computed all 16 connected CTP components for four spacetime configurations (64 complex components total) at Kcut=1, Nmax=12 and 16.
-- Added a spatial-separation scan r=1,2,3 for a fixed unequal-time pattern and a second later-time configuration.
-- Verified the largest-time identity to a maximum absolute residual of 4.62e-17 and complement conjugation at stored floating-point precision.
-- The maximum relative Nmax=12 to 16 change across all 64 components is 4.60e-12.
-- Cross-checked the all-forward components against the earlier independent time-ordered implementation; maximum relative difference is below 4.31e-13.
-- Six automated tests pass. Current CTP all-branch results remain at Kcut=1 and cover selected configurations, not a full four-coordinate grid or continuum limit.
-
-## 2026-11-22 — Composite six-field source and SD residual diagnostic
-
-- Implemented the finite-mode normal-ordered composite operator `:Phi^3:_m` and independently checked `:Phi^3:=Phi^3-3 Delta_m(0) Phi` on interior Fock columns.
-- Corrected an important conceptual point: the composite cumulant `K_{3;3}=<:phi_1^3: phi_2 phi_3 phi_4>_c` is nonzero in a free Gaussian vacuum because the three constituents of `:phi^3:` can contract with the three external fields; it equals `6 F12 F13 F14`. The elementary connected six-point function still vanishes in a Gaussian state.
-- Evaluated the all-forward connected four-point Schwinger-Dyson residual with finite differences. At Kcut=1 the relative residual is about 3.1-3.6% across the tested Nmax=4,6,8 and h=0.1 to 0.0125 scans.
-- A Kcut=2,Nmax=4 exploratory run gives a larger residual (~18.3%) but is not Fock-converged.
-- Eight combined unit tests pass. The residual is classified as preliminary and not as a successful continuum SD identity check; the projected Fock boundary terms remain to be derived.
+- Implemented the projected normal-ordered cubic composite operator P_K :phi_K^3:_m, matching the finite-mode Hamiltonian rather than using an unprojected pointwise cube.
+- Clarified that S_4,c is the fourth cumulant with the composite A_1=:phi_1^3:_m treated as one argument; it is not the elementary connected six-field cumulant. In a Gaussian vacuum M33 can be nonzero (3! F12 F13 F14) while M31 vanishes.
+- Computed M33=<T P_K:phi_1^3:_m phi_2 phi_3 phi_4> and the three M31(1;j) F2 terms for a noncoincident all-forward configuration.
+- Evaluated the time derivative by centered finite differences and the spatial derivative spectrally; independently compared spatial finite differences at a=0.05, 0.1, 0.2.
+- At Nmax=8, h=0.00625, the relative SD residual is 2.43384e-5; at h=0.003125 it is 6.12712e-6, consistent with O(h^2). A fit versus h^2 gives a zero-step residual intercept magnitude 8.86e-13.
+- Nmax=8 to 10 changes F4c, M33, and the connected source by 2.96e-9, 6.66e-10, and 6.58e-10 respectively.
+- Independently checked the projected cubic operator against the Hamiltonian commutator and against Fourier-projected phi^3 - 3 Delta_m(0) phi.
+- Six Phase-IV tests pass. The result covers one noncoincident all-forward configuration at Kcut=1; no continuum extrapolation is claimed.
