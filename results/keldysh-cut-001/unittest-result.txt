@@ -1,0 +1,8 @@
+test_analytic_sech_squared_transform (test_keldysh_cut_benchmark.KeldyshCutBenchmarkTests.test_analytic_sech_squared_transform) ... ok
+test_coincident_mode_uses_factorial_moment (test_keldysh_cut_benchmark.KeldyshCutBenchmarkTests.test_coincident_mode_uses_factorial_moment) ... ok
+test_cut_sum_matches_unordered_fock_sum (test_keldysh_cut_benchmark.KeldyshCutBenchmarkTests.test_cut_sum_matches_unordered_fock_sum) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.421s
+
+OK

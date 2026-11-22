@@ -1,18 +1,35 @@
-# Research Log
+# Research Status
 
-## 2026-11-22 — Project bootstrap
+Last updated: 2026-11-22
 
-- Established the working title and Phase-I model: finite-duration homogeneous interaction pulse in 1+1D lambda phi^4.
-- Fixed the initial target observables: N1(k), N2(k,q), Gaussian reconstruction N2_G, connected cumulant kappa4, and relative diagnostic R2.
-- Recorded prior work showing that general spectrum mappings, Gaussian HBT reconstruction, non-Gaussian initial conditions, four-point kinetic corrections, and MPS real-time phi^4 studies are not new by themselves.
-- Provisional research gap: momentum-resolved connected outgoing two-particle spectrum generated dynamically from a Gaussian in-state under a finite interaction pulse. Priority remains subject to a deeper citation-chain audit.
-- No physical numerical computation has been run and no physical result is claimed.
+## Current phase
 
-## 2026-11-22 — Lowest-order Keldysh/Dyson derivation
+Phase I: lowest-order Keldysh cut verification and finite-volume perturbative benchmark for the time-dependent, normal-ordered 1+1D `lambda(t) phi^4` model.
 
-- Derived the in-in expansion for N2(k,q); the first nonzero contribution is the cross-branch term with one quartic vertex on each Keldysh branch.
-- Derived the normalized finite-volume 0 -> 4 amplitude, including the factorials for repeated momentum occupations.
-- Derived the leading finite-volume occupation-state sum for inclusive N2(k,q).
-- Clarified that the anomalous four-annihilator coherence can be O(lambda), while the number-type connected out-mode cumulant kappa4(k,q) starts at O(lambda^2) for the normal-ordered free-vacuum pulse.
-- A standalone combinatorial test checked five occupation patterns (4; 3+1; 2+2; 2+1+1; 1+1+1+1). All passed at absolute tolerance 1e-14.
-- The test is a combinatorial validation only; no physical spectrum or time evolution was computed.
+## Completed in the research branch
+
+- Derived the leading `O(lambda0^2)` cross-branch contribution to the distinct-mode two-particle inclusive spectrum.
+- Derived the normalized finite-volume vacuum-to-four-particle amplitude, including repeated-mode Bose factors.
+- Derived the four-cut-Wightman representation and its residual symmetry factor `1/2`.
+- Independently evaluated the same leading spectrum by an unordered normalized-Fock-state sum.
+- Verified cut-Wightman and Fock-state sums for generic, opposite-momentum, and coincident-mode channels; the coincident channel uses `n_k (n_k - 1)`.
+- Selected `lambda(t) = lambda0 sech^2(t/T)` and derived its analytic Fourier transform.
+- Checked the Fourier transform against numerical Simpson integration at four frequencies.
+- Evaluated finite-volume momentum sums and demonstrated cutoff convergence for the chosen parameters.
+- Added three automated tests; all passed.
+
+## Quantitative benchmark
+
+For `m=1`, `L=20`, `T=1`, `lambda0/m^2=0.1`, and measured mode indices `(1,2)`, `(1,-1)`, `(1,1)`, the cutoff-24 leading spectra are recorded in `results/keldysh-cut-001/result.json` and explained in `theory/05-keldysh-cut-propagators-and-pulse-benchmark.md`.
+
+## Not completed
+
+- Higher-order corrections and the complete next-to-leading-order cumulant.
+- Full nonperturbative finite-volume Hamiltonian evolution.
+- Infinite-volume and continuum extrapolations.
+- Independent comparison with an exact Hamiltonian solver.
+- Complete citation-chain novelty audit.
+
+## Scope of validation
+
+The completed checks validate the leading perturbative cut/Fock equivalence, the Bose combinatorics, the analytic pulse transform, and momentum-sum convergence for this benchmark. They do not validate nonperturbative dynamics or establish a final novelty claim.
