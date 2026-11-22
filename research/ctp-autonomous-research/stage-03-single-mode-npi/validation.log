@@ -1,0 +1,12 @@
+test_ctp_identities (test_born_bubble.BubbleCheck.test_ctp_identities) ... ok
+test_oscillator_fock_coefficients (test_born_bubble.BubbleCheck.test_oscillator_fock_coefficients) ... ok
+test_free (test_2pi_k0.WithBilocalSource.test_free) ... ok
+test_weak_matches_diagrams (test_2pi_k0.WithBilocalSource.test_weak_matches_diagrams) ... ok
+test_free (test_4pi_k0.VertexChecks.test_free) ... ok
+test_weak_and_identities (test_4pi_k0.VertexChecks.test_weak_and_identities) ... ok
+test_explicit_wick_coefficients_both_solvers (test_discrete_weak_order.WeakOrder.test_explicit_wick_coefficients_both_solvers) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.892s
+
+OK

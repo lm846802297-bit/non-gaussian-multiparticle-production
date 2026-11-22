@@ -1,0 +1,31 @@
+# Non-Gaussian CTP dynamics: autonomous research checkpoint
+
+Baseline: Phase VII draft PR #8, commit
+`eab1f5b3198d03eafc3f162299c9038956beaa0b`.
+Results here are isolated on the research branch; no change is made to main.
+
+## Published stages
+
+1. [K=5 finite-Fock/time-derivative audit](stage-01-k5-fock/README.md)
+   ([replay](stage-01-k5-fock/REPLAY.md),
+   [SHA-256](stage-01-k5-fock/SHA256SUMS.txt)).
+2. [Independent CF4, configuration C, and regulator checks](stage-02-ctp-regulators/README.md)
+   ([SHA-256](stage-02-ctp-regulators/SHA256SUMS.txt)).
+3. [Single-mode nPI comparison pilot](stage-03-single-mode-npi/README.md)
+   ([SHA-256](stage-03-single-mode-npi/SHA256SUMS.txt)).
+
+## Remaining gates
+
+- Verify the K=6 N=6→7 changes at L=20 and at matched physical cutoff L=24.
+  Use signed per-branch residuals and propagated-state cross-checks, not
+  solely a small time-stencil residual. A two-volume difference is not an
+  infinite-volume extrapolation. Pairing integer K,L requires retaining
+  both the endpoint prescription and mode normalization.
+- Cross-check the closure implementation on a nonzero-mode case; exploit
+  total pair momentum so that solving a full dense (branch,time,mode)^4
+  vertex is not the first computational route. Compare regulated F4c at
+  common events and apply the same out-mode projection before making
+  statements about κ4.
+- Keep numerical convergence, regulator dependence, and closure error
+  distinct. Archive native datasets, inputs, replay, and digests as separate
+  checkpoints. Mark any conclusion that cannot be checked as pending.
