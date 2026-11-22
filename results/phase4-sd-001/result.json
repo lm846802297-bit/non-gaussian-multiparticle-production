@@ -1,0 +1,277 @@
+{
+  "fock_cutoff_comparison": {
+    "Nmax10_relative_sd_residual": 2.431098546978643e-05,
+    "Nmax8_vs_10_relative_F4c": 2.9555979948769952e-09,
+    "Nmax8_vs_10_relative_M33": 6.662255289993403e-10,
+    "Nmax8_vs_10_relative_connected_source": 6.582403308875281e-10
+  },
+  "free_vacuum": {
+    "F4c": [
+      3.469446951953614e-18,
+      1.734723475976807e-18
+    ],
+    "M31_F2_terms": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "M33_projected": [
+      -0.0007425475075099279,
+      0.0010894911157852702
+    ],
+    "SD_relative_residual": 0.9999999999999994,
+    "SD_residual": [
+      -2.2733551152676053e-15,
+      -3.2352592826967447e-16
+    ],
+    "SD_residual_abs": 2.2962605484517957e-15,
+    "basis_dimension": 84,
+    "box_plus_mass_F4c": [
+      -2.2733551152676053e-15,
+      -3.2352592826967447e-16
+    ],
+    "connected_source": [
+      -0.0007425475075099279,
+      0.0010894911157852702
+    ],
+    "dtt_F4c": [
+      -2.4286128663675295e-15,
+      -3.4694469519536137e-16
+    ],
+    "dxx_F4c": [
+      -1.517883041479706e-16,
+      -2.1684043449710086e-17
+    ],
+    "interaction_hermiticity_error": 1.3877787807814457e-17,
+    "lambda_at_t1": 0.0,
+    "moment_cache_entries": 27,
+    "normal_order_delta": 0.07270141081892326,
+    "parameters": {
+      "Kcut": 1,
+      "L": 20.0,
+      "Nmax": 6,
+      "T": 1.0,
+      "a": 0.2,
+      "atol": 2e-11,
+      "events": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          -0.5,
+          2.0
+        ],
+        [
+          -1.0,
+          3.0
+        ]
+      ],
+      "h": 0.05,
+      "lambda0": 0.0,
+      "m": 1.0,
+      "max_step": 0.02,
+      "rtol": 2e-09
+    },
+    "runtime": {
+      "cpu_count": 5,
+      "machine": "x86_64",
+      "numpy": "2.3.5",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "processor": "",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "scipy": "1.17.0"
+    },
+    "source_term": [
+      0.0,
+      0.0
+    ],
+    "vacuum_norm_out": 1.0
+  },
+  "limitations": [
+    "One noncoincident all-forward configuration only.",
+    "Finite volume L=20 and momentum cutoff K=1; no continuum or infinite-volume extrapolation.",
+    "Fock cutoff checked at Nmax=8 and 10 only.",
+    "Time derivative uses finite differences; Richardson intercept is a discretization diagnostic.",
+    "No other contour assignments or event configurations have been tested against the six-field source equation."
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4",
+  "primary": {
+    "F4c": [
+      3.6008526812774527e-06,
+      1.4752437347021266e-05
+    ],
+    "M31_F2_terms": [
+      [
+        -1.750357670854535e-07,
+        1.6918436686073396e-07
+      ],
+      [
+        5.281891517239344e-07,
+        -6.782812555213605e-08
+      ],
+      [
+        4.919838260906155e-07,
+        -1.592859526775564e-07
+      ]
+    ],
+    "M33_projected": [
+      -0.0007359788301065346,
+      0.0010894708189524212
+    ],
+    "SD_relative_residual": 2.4338444009334064e-05,
+    "SD_residual": [
+      9.465322750223715e-11,
+      4.3802375622550735e-10
+    ],
+    "SD_residual_abs": 4.481339582027822e-10,
+    "basis_dimension": 165,
+    "box_plus_mass_F4c": [
+      5.157547329219211e-06,
+      -7.625797291070925e-06
+    ],
+    "connected_source": [
+      -0.0007368239673172637,
+      0.0010895287486637902
+    ],
+    "dtt_F4c": [
+      1.3369976237243007e-06,
+      -2.3198525322953852e-05
+    ],
+    "dxx_F4c_fd": [
+      -2.1962475625029313e-07,
+      -8.200208548216763e-07
+    ],
+    "dxx_F4c_spectral": [
+      -2.1969702421745707e-07,
+      -8.202906848616613e-07
+    ],
+    "interaction_hermiticity_error": 2.7755575615628914e-17,
+    "lambda_at_t1": 0.04199743416140261,
+    "moment_cache_entries": 31,
+    "normal_order_delta": 0.07270141081892326,
+    "parameters": {
+      "Kcut": 1,
+      "L": 20.0,
+      "Nmax": 8,
+      "T": 1.0,
+      "a": 0.2,
+      "atol": 2e-11,
+      "events": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.5,
+          1.0
+        ],
+        [
+          -0.5,
+          2.0
+        ],
+        [
+          -1.0,
+          3.0
+        ]
+      ],
+      "h": 0.00625,
+      "lambda0": 0.1,
+      "m": 1.0,
+      "max_step": 0.02,
+      "rtol": 2e-09
+    },
+    "runtime": {
+      "cpu_count": 5,
+      "machine": "x86_64",
+      "numpy": "2.3.5",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "processor": "",
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "scipy": "1.17.0"
+    },
+    "source_term": [
+      -5.1574526759917076e-06,
+      7.62623531482715e-06
+    ],
+    "vacuum_norm_out": 1.0000000000000016
+  },
+  "run_id": "phase4-sd-001",
+  "spatial_stencil_scan": [
+    {
+      "a": 0.05,
+      "relative_fd_vs_spectral_error": 2.0566642373580092e-05
+    },
+    {
+      "a": 0.1,
+      "relative_fd_vs_spectral_error": 8.224563785195726e-05
+    },
+    {
+      "a": 0.2,
+      "relative_fd_vs_spectral_error": 0.00032894437235167956
+    }
+  ],
+  "status": "passed_selected_noncoincident_all_forward_configuration",
+  "time_stencil_richardson_fit": {
+    "complex_zero_step_intercept": [
+      7.956772463748669e-13,
+      3.901480450375056e-13
+    ],
+    "fit_variable": "h^2",
+    "intercept_magnitude": 8.861815713753463e-13
+  },
+  "time_stencil_scan": [
+    {
+      "h": 0.025,
+      "relative_sd_residual": 0.0003893004633912072,
+      "residual": [
+        1.5043006263112368e-09,
+        7.006555585790468e-09
+      ]
+    },
+    {
+      "h": 0.0125,
+      "relative_sd_residual": 9.732406498903578e-05,
+      "residual": [
+        3.764111778067325e-10,
+        1.7519171947181489e-09
+      ]
+    },
+    {
+      "h": 0.00625,
+      "relative_sd_residual": 2.4338444009334064e-05,
+      "residual": [
+        9.465322750223715e-11,
+        4.3802375622550735e-10
+      ]
+    },
+    {
+      "h": 0.003125,
+      "relative_sd_residual": 6.127119363523455e-06,
+      "residual": [
+        2.4575950187897264e-11,
+        1.1010828367222111e-10
+      ]
+    }
+  ],
+  "validation": {
+    "automated_tests": "6 passed",
+    "hamiltonian_hermiticity_error": 2.7755575615628914e-17,
+    "normal_ordering_fourier_projection": "passed, relative error <2e-12 on interior Fock subspace",
+    "out_state_norm": 1.0000000000000016,
+    "projected_cubic_commutator_identity": "passed, relative matrix-element error <4e-16 on interior Fock subspace"
+  }
+}
