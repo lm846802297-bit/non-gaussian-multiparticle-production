@@ -4,32 +4,32 @@ Last updated: 2026-11-22
 
 ## Current phase
 
-Phase I: lowest-order Keldysh cut verification and finite-volume perturbative benchmark for the time-dependent, normal-ordered 1+1D `lambda(t) phi^4` model.
+Phase III: all 16 CTP contour components of the connected four-point function for selected spacetime configurations in the finite-volume 1+1D normal-ordered time-dependent `lambda(t) phi^4` model.
 
-## Completed in the research branch
+## Completed
 
-- Derived the leading `O(lambda0^2)` cross-branch contribution to the distinct-mode two-particle inclusive spectrum.
-- Derived the normalized finite-volume vacuum-to-four-particle amplitude, including repeated-mode Bose factors.
-- Derived the four-cut-Wightman representation and its residual symmetry factor `1/2`.
-- Independently evaluated the same leading spectrum by an unordered normalized-Fock-state sum.
-- Verified cut-Wightman and Fock-state sums for generic, opposite-momentum, and coincident-mode channels; the coincident channel uses `n_k (n_k - 1)`.
-- Selected `lambda(t) = lambda0 sech^2(t/T)` and derived its analytic Fourier transform.
-- Checked the Fourier transform against numerical Simpson integration at four frequencies.
-- Evaluated finite-volume momentum sums and demonstrated cutoff convergence for the chosen parameters.
-- Added three automated tests; all passed.
+- Phase I: lowest-order Keldysh cut derivation and finite-volume perturbative benchmark.
+- Phase II: exact two- and connected four-point Schwinger-Dyson hierarchy; finite-volume all-orders-in-projected-Hamiltonian dynamics; selected equal-time and unequal-time all-forward correlators.
+- Phase III: direct branch-state overlap construction for all 16 CTP branch assignments; four spacetime configurations evaluated; three-point spatial-separation scan at fixed unequal times; Nmax=12 to 16 convergence; CTP largest-time and conjugation checks.
 
-## Quantitative benchmark
+## Phase III quantitative validation
 
-For `m=1`, `L=20`, `T=1`, `lambda0/m^2=0.1`, and measured mode indices `(1,2)`, `(1,-1)`, `(1,1)`, the cutoff-24 leading spectra are recorded in `results/keldysh-cut-001/result.json` and explained in `theory/05-keldysh-cut-propagators-and-pulse-benchmark.md`.
+- Four configurations × 16 branch assignments = 64 connected complex components.
+- Maximum relative Nmax=12 to Nmax=16 change: `4.60e-12`.
+- Maximum largest-time identity residual: `4.62e-17` absolute.
+- Complement-conjugation residual: zero at stored floating-point precision.
+- Independent all-forward comparison with the previous time-ordered implementation: relative difference below `4.31e-13`.
+- Six automated tests pass.
+- Nmax=16 basis dimension: 969 for Kcut=1.
 
-## Not completed
+## Remaining work
 
-- Higher-order corrections and the complete next-to-leading-order cumulant.
-- Full nonperturbative finite-volume Hamiltonian evolution.
-- Infinite-volume and continuum extrapolations.
-- Independent comparison with an exact Hamiltonian solver.
-- Complete citation-chain novelty audit.
+- Extend from selected configurations to a structured four-coordinate spacetime grid and additional time orderings.
+- Increase momentum-mode cutoff and assess Kcut convergence; current CTP all-branch results use Kcut=1.
+- Numerically evaluate the exact four-point Schwinger-Dyson residual, including the six-field composite source.
+- Derive and compare controlled six-point closures (2PI/Bethe-Salpeter versus 4PI) against the finite-Hilbert reference.
+- Complete continuum and infinite-volume extrapolations before making continuum-QFT claims.
 
-## Scope of validation
+## Scientific status
 
-The completed checks validate the leading perturbative cut/Fock equivalence, the Bose combinatorics, the analytic pulse transform, and momentum-sum convergence for this benchmark. They do not validate nonperturbative dynamics or establish a final novelty claim.
+All reported Phase-III numbers are finite-volume, finite-mode, finite-Fock-space results. The 16 contour components are complete for the four stored spacetime configurations, not for the entire spacetime domain. No final novelty claim is made.

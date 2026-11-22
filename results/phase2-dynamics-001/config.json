@@ -1,0 +1,153 @@
+{
+  "baseline": {
+    "Kcut": 2,
+    "L": 20.0,
+    "Nmax": 10,
+    "T": 1.0,
+    "m": 1.0
+  },
+  "coupling_scan_lambda0_over_m2": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "fock_cutoff_scan": {
+    "Kcut": 2,
+    "Nmax": [
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "T": 1.0,
+    "lambda0_over_m2": 0.5
+  },
+  "initial_state": "free Gaussian vacuum of mass m",
+  "limitations": [
+    "finite momentum-mode cutoff",
+    "finite Fock-space cutoff",
+    "no continuum extrapolation",
+    "no infinite-volume extrapolation",
+    "equal-time spatial G4c only; full unequal-time CTP G4c not yet computed"
+  ],
+  "model": "1+1D real scalar, normal-ordered lambda(t) phi^4",
+  "momentum_cutoff_scan": {
+    "Kcut": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Kcut7_note": "Kcut=7 was executed as a supplemental run with the same physical parameters and solver tolerances; see kcut7-supplement.json.",
+    "Nmax": 6,
+    "T": 1.0,
+    "lambda0_over_m2": 0.2
+  },
+  "normal_ordering": "free mass-m vacuum with the same finite momentum-mode regulator",
+  "pulse": "lambda(t) = lambda0 * sech(t/T)^2",
+  "pulse_duration_scan": {
+    "Kcut": 2,
+    "Nmax": 10,
+    "T": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "lambda0_over_m2": 0.2
+  },
+  "solver": {
+    "atol": 5e-12,
+    "base_max_step": "min(T/24, 0.025/max(omega))",
+    "integration_interval": "[-12T, +12T]",
+    "method": "DOP853",
+    "rtol": 5e-10
+  },
+  "study": "phase2-real-time-fock-dynamics",
+  "symmetry_sector": "total momentum zero, even Z2 parity",
+  "time_resolved_run": {
+    "Kcut": 2,
+    "Nmax": 8,
+    "T": 1.0,
+    "field_correlator_positions": [
+      0.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "lambda0_over_m2": 0.2,
+    "time_samples": 25
+  },
+  "unequal_time_ctp_four_point": {
+    "Nmax": 16,
+    "T": 1.0,
+    "convergence_Nmax": [
+      12,
+      16
+    ],
+    "events_equal_time": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "events_unequal_A": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "events_unequal_B": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        2.0
+      ],
+      [
+        -2.0,
+        3.0
+      ]
+    ],
+    "lambda0_over_m2": 0.2,
+    "model_Kcut": 1
+  },
+  "units": "hbar = c = 1"
+}
