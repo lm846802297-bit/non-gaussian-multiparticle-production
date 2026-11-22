@@ -13,6 +13,8 @@ Results here are isolated on the research branch; no change is made to main.
    ([SHA-256](stage-02-ctp-regulators/SHA256SUMS.txt)).
 3. [Single-mode nPI comparison pilot](stage-03-single-mode-npi/README.md)
    ([SHA-256](stage-03-single-mode-npi/SHA256SUMS.txt)).
+4. [Nonzero-mode K=1 three-loop 2PI/BS comparison](stage-04-nonzero-mode-2pi/README.md)
+   ([SHA-256](stage-04-nonzero-mode-2pi/SHA256SUMS.txt)).
 
 ## Remaining gates
 

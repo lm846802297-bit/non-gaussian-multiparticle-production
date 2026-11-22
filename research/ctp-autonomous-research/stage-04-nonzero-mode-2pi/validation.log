@@ -1,0 +1,9 @@
+test_free (test_k1.FourPointResponse.test_free) ... ok
+test_independent_spatial_wick_in_all_Q (test_k1.FourPointResponse.test_independent_spatial_wick_in_all_Q) ... ok
+test_shift_and_contour_identities (test_k1.FourPointResponse.test_shift_and_contour_identities) ... ok
+test_zero_mode_reduction (test_k1.FourPointResponse.test_zero_mode_reduction) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.172s
+
+OK
