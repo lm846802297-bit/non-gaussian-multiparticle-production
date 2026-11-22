@@ -15,14 +15,16 @@ Results here are isolated on the research branch; no change is made to main.
    ([SHA-256](stage-03-single-mode-npi/SHA256SUMS.txt)).
 4. [Nonzero-mode K=1 three-loop 2PI/BS comparison](stage-04-nonzero-mode-2pi/README.md)
    ([SHA-256](stage-04-nonzero-mode-2pi/SHA256SUMS.txt)).
+5. [K=6 Fock-truncation and two-volume audit](stage-05-k6-fock-volume/README.md)
+   ([SHA-256](stage-05-k6-fock-volume/SHA256SUMS.txt)).
 
 ## Remaining gates
 
-- Verify the K=6 N=6→7 changes at L=20 and at matched physical cutoff L=24.
-  Use signed per-branch residuals and propagated-state cross-checks, not
-  solely a small time-stencil residual. A two-volume difference is not an
-  infinite-volume extrapolation. Pairing integer K,L requires retaining
-  both the endpoint prescription and mode normalization.
+- Stage 05 verifies K=6 N=6→7 at L=20 and L=24 with signed per-branch
+  residuals. An independent K=6 N=7 propagator, higher momentum cutoffs,
+  and further matched-cutoff volumes remain open. The existing two-volume
+  difference is not an infinite-volume extrapolation; retain the endpoint
+  prescription and mode normalization when matching K/L.
 - Cross-check the closure implementation on a nonzero-mode case; exploit
   total pair momentum so that solving a full dense (branch,time,mode)^4
   vertex is not the first computational route. Compare regulated F4c at
