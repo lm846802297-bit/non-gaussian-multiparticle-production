@@ -1,0 +1,17 @@
+Phase VII provenance
+Base commit: bbad28cd616b39afeac941200e777e06e76879d8
+Branch: validation/phase7-cutoff-fock-convergence
+Model: 1+1D normal-ordered real scalar lambda(t) phi^4; m=1, L=20, lambda0=0.1, T=1.
+Environment: ChatGPT Linux; Python 3.13.5; NumPy 2.3.5; SciPy 1.17.0; Intel Xeon Platinum 8573C; 5 visible CPUs.
+Integrator: DOP853; primary rtol=2e-9, atol=2e-11; cross-check rtol=2e-8, atol=2e-10.
+Original source Git blob SHA-1:
+src/sd_residual.py 29139f6f8a35d3d874c401d240318ed2c8cadc40
+src/ctp_sd_all_branches.py 4a829bec5cf295032808ab28f13684d86bea5bea
+Phase VII source SHA-256:
+src/phase7_fast_ops.py 0daf7573ae92d7f16db3f50ae6f6720c4ed399a870eaaa9b6a37c9a6307bb4c8
+src/phase7_forward_batched.py c97a228745da7613ef95b5c6f585dd7f4d3fb29fb1161c9c0ee9c2b7e2ab558d
+src/phase7_batched_ctp.py 556131a16e55d1af80d3e2b9b345d50a84c910a97133c6c594df21b83409ee91
+tests/test_phase7.py 06243d6d1df12efc970aa07391104621aa0c8c1b09e3cd45f7acb7b00035af20
+Phase-VII tests: 13/13 PASS.
+Native raw outputs and SHA-256 manifest are prepared in the local bundle phase7-cutoff-scan-001.tar.xz (SHA-256 e8e720bcb253ddd9bfd657e42a0902226a5a2dbb07a81c3b39560f1bd78a8b87).
+Main is unchanged. This PR targets the Phase-VI validation branch and remains Draft.
