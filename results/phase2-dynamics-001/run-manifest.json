@@ -64,9 +64,9 @@
     "Finite Fock-space cutoff; convergence demonstrated for selected parameters only.",
     "Finite spatial volume; no infinite-volume extrapolation.",
     "The CTP connected four-point equation is exact but couples to a six-field composite moment; no closed 4PI truncation has yet been solved.",
-    "Numerical field correlators are equal-time spatial slices and selected mode projections, not the full independent-four-time CTP G4c(x1,x2;y1,y2).",
     "Higher-order corrections are included implicitly by the finite-dimensional Hamiltonian evolution; their individual perturbative coefficients have not been isolated analytically.",
-    "No final novelty or continuum-physics claim is made."
+    "No final novelty or continuum-physics claim is made.",
+    "The unequal-time CTP calculation samples selected all-forward-branch time-ordered configurations; it does not tabulate the full spacetime function or all 16 contour-index components."
   ],
   "model": {
     "boundary_conditions": "periodic spatial box",
@@ -88,8 +88,11 @@
     "provenance/phase2-environment.txt": "be611f5d15d9a489e2a0342433e216829a4c92838f517244a73fcfad0a38b2c2",
     "results/phase2-dynamics-001/kcut7-supplement.json": "82f42249940c3348a43a5e2f57c51b9ae0036d455ae518dbb8aa5619e8c606e2",
     "results/phase2-dynamics-001/result.json": "e6fd476cfe5ae58a32f7d86d1ca9a39f5381784a3c760a917ec3c3cb638ec18a",
-    "results/phase2-dynamics-001/summary.txt": "b265f1ff1bb06a311209abc6240ed73dae88c816d28ccfc98ce36d63a2a3fe82",
-    "results/phase2-dynamics-001/test-output.txt": "34f8625097f1cb8cab7f20eec43d412927f067ee8353881f51db6d2eceeb68f2"
+    "results/phase2-dynamics-001/summary.txt": "52a19e31f1ddd2019d21467cbc50221dda79b7b20169dfef300499db32f0edea",
+    "results/phase2-dynamics-001/test-output.txt": "34f8625097f1cb8cab7f20eec43d412927f067ee8353881f51db6d2eceeb68f2",
+    "results/phase2-dynamics-001/unequal-time-ctp-four-point-Nmax12.json": "3192bb3a2af414162051c612ff3c8af7adfc73199e65d43ffdfb89bfed4a5c90",
+    "results/phase2-dynamics-001/unequal-time-ctp-four-point.json": "683896efe86af62239e3c3ce8e6fd91eaba4a84b53b1f2c69b424ce357e01b43",
+    "results/phase2-dynamics-001/unequal-time-ctp-four-point.txt": "683896efe86af62239e3c3ce8e6fd91eaba4a84b53b1f2c69b424ce357e01b43"
   },
   "run_id": "phase2-dynamics-001",
   "runtime": {
@@ -114,20 +117,21 @@
     ]
   },
   "source_hashes_sha256": {
-    "RESEARCH_LOG.md": "29a2047a14df1d4d71c4f48fdc4e2e1c37d38a052b48c12300fe73908d51517a",
-    "STATUS.md": "9c1745da5b1a5623939e431aeb6e48f4572ef57d89aaf2d7cd19d265bcf6bf7a",
+    "RESEARCH_LOG.md": "6a363858a9fcaab9a8681893038c493104ef3a3b6a4973b904c6c1ba58e98f92",
+    "STATUS.md": "bebe4f57082681b0844abed419ba7354b70da28b7a01517e7b1afff3714605b9",
     "figures/README.md": "45d12695b2f2ae54dcb3ac36ed932448486a739948e18fc98e6b8157bf04e898",
     "figures/phase2_R2_vs_coupling.svg": "8d64660d4f0622d43cb4cd51b9cc8c8447577e1cad7974998ea9c2db1007434b",
     "figures/phase2_kappa4_time.svg": "9fe997ce8371ca8049195a7f2b10f5fde31f08ef90f22d65d6c9ae058f96434e",
     "figures/phase2_n2_over_leading.svg": "1caca11b9e24a34eb270b3f775229b602e78ccfc5c15f0bcaf09ebf0343fb3ca",
     "figures/phase2_spatial_G4c.svg": "5f07df47931603bce469ce73a0a41db82e448e125e39f7025d902e0867e26f54",
     "figures/plot_phase2_results.py": "74eb73542abdc6ab58100355b6a40b4466e461e2406b1b43fc5bdf3edc8c255a",
-    "results/phase2-dynamics-001/config.json": "37f144654d5b4cbdcb93dfd06f40db1bff1511a7d2358312d84962ceca729cff",
+    "results/phase2-dynamics-001/config.json": "d22fe147fe18f4d51a3f35dd3bf9d968a3deeefbbe2e9b2e6d2bf04bd7e445e1",
     "src/real_time_fock_dynamics.py": "fb56de16d3b0791371454c278c3930afca0ff460c8ec758a1077570e81ab6f55",
     "src/run_kcut7_supplement.py": "0f4f93cddc08db18d820457cac6db9d830913c94b1b746f3b4883197d0d4607c",
     "src/run_phase2_study.py": "20cd8af6c050e0246254358ac00c7eb1908279db434dfaaafcc4367abc93efbf",
-    "tests/test_real_time_fock_dynamics.py": "fa179c3fe2fac49c4dfe49e94157a512e64d2da5ea47dfb47e72cdfced3deff6",
-    "theory/06-exact-ctp-hierarchy-and-nonperturbative-dynamics.md": "eae786474d65a8fba263b2e34d72d615016d67e1f05b8b3a96dadfdc7180d4d5"
+    "src/unequal_time_ctp_four_point.py": "f237f465c702e1e08b32901b70a898c4ee8d44590805541d1bd71ee5550bce8b",
+    "tests/test_real_time_fock_dynamics.py": "208616f141c0b77b6b17ca8f6e9a74f13272da3e1fe239550ef89722bdaeef20",
+    "theory/06-exact-ctp-hierarchy-and-nonperturbative-dynamics.md": "3d9fd5e9364b4bb052fc0060dd42ea215f1f221a2d6b46bf22090aa2b4d28a0e"
   },
   "status": "completed_with_explicit_cutoff_limitations",
   "validation": {
@@ -137,8 +141,9 @@
     "momentum_cutoff": "K=6 to 7 relative N2 change approximately 0.65%; sequence non-monotonic, not converged",
     "state_norm_error": "approximately 1e-14 or better",
     "time_step": "N2 stable to displayed precision when max step is halved and quartered",
-    "unit_tests": 8,
-    "unit_tests_passed": 8,
+    "unequal_time_ctp_four_point": "Selected all-forward-branch time-ordered four-field components computed at Kcut=1, Nmax=16; selected values agree with Nmax=12 below 8e-13 relative.",
+    "unit_tests": 9,
+    "unit_tests_passed": 9,
     "weak_coupling": "finite-Hilbert real-time N2 agrees with leading perturbative N2 within 1% at lambda0/m^2=0.01"
   }
 }

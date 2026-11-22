@@ -85,5 +85,69 @@
     "lambda0_over_m2": 0.2,
     "time_samples": 25
   },
+  "unequal_time_ctp_four_point": {
+    "Nmax": 16,
+    "T": 1.0,
+    "convergence_Nmax": [
+      12,
+      16
+    ],
+    "events_equal_time": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "events_unequal_A": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "events_unequal_B": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        2.0
+      ],
+      [
+        -2.0,
+        3.0
+      ]
+    ],
+    "lambda0_over_m2": 0.2,
+    "model_Kcut": 1
+  },
   "units": "hbar = c = 1"
 }

@@ -22,7 +22,7 @@
 - Derived the exact connected four-point equation, including the normal-ordering subtraction and the coupling to the six-field composite moment / connected six-point sector.
 - Implemented the projected normal-ordered Hamiltonian `H(t)=H0+lambda(t)V` in the total-momentum-zero, even-Z2 Fock sector.
 - Evolved the Gaussian free vacuum with `lambda(t)=lambda0 sech(t/T)^2` and computed `N1`, `N2`, `N2_G`, `kappa4`, and `R2` for generic, opposite, and coincident channels.
-- Computed equal-time spatial `F4,c(t;0,0,0,r)` and time-resolved reference-mode cumulants.
+- Computed equal-time spatial `F4,c(t;0,0,0,r)`, time-resolved reference-mode cumulants, and selected unequal-time all-forward-branch CTP four-point components.
 - Coupling scan: for generic `(1,2)`, `N2/N2_LO` falls from 0.98954 at `lambda0/m^2=0.02` to 0.77127 at 0.5.
 - Fock-space convergence at `K=2` is demonstrated through `Nmax=12`; momentum cutoff remains not fully converged through `K=7`.
-- Eight automated tests pass. No continuum result or final novelty claim is made.
+- Nine automated tests pass. Selected unequal-time components converge between `Nmax=12` and 16 below `8e-13` relative. No continuum result or final novelty claim is made.

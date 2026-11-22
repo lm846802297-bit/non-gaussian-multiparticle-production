@@ -157,7 +157,19 @@ F_{4,c}(t;0,0,0,r)=
 
 where the three equivalent pairings coincide for the selected geometry and translation-invariant state. More generally the implementation subtracts all three pairings explicitly. The field-operator evaluation basis is extended by four particles so that the four successive field insertions are not cut off at the state-vector boundary.
 
-These are equal-time spatial slices of the CTP connected four-point function. They are not yet the full independent-four-time object \(F_{4,c}(x_1,x_2;y_1,y_2)\); that requires unequal-time contour propagation and is a subsequent extension.
+These are equal-time spatial slices of the CTP connected four-point function. In addition, a separate full-Fock-space calculation evaluates selected unequal-time, all-forward-branch (Feynman-ordered) components. For \(K=1\), \(N_{\max}=16\), \(m=1\), \(L=20\), \(\lambda_0=0.2\), and \(T=1\), the connected component at events \((t,x)=((1,0),(0.5,1),(-0.5,2),(-1,3))\) is
+
+\[
+F_{4,c}^{++++}=7.2394071\times10^{-6}+2.9390930\times10^{-5}i.
+\]
+
+For \(((2,0),(1,1),(-1,2),(-2,3))\), it is
+
+\[
+F_{4,c}^{++++}=-7.2611960\times10^{-7}-3.6694418\times10^{-5}i.
+\]
+
+The equal-time configuration \(((0,0),(0,0),(0,0),(0,2))\) gives \(-1.3079384\times10^{-5}\). These selected components agree between \(N_{\max}=12\) and 16 at relative differences below \(8\times10^{-13}\). This establishes nontrivial unequal-time structure in a finite Fock-space calculation. The complete function over arbitrary four spacetime points and all 16 contour-index components has not yet been tabulated.
 
 ## 7. Numerical findings for the stated finite model
 

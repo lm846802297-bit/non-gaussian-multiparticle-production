@@ -4,10 +4,11 @@ test_interaction_generates_equal_time_connected_four_field (test_real_time_fock_
 test_norm_and_zero_coupling (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_norm_and_zero_coupling) ... ok
 test_projected_interaction_is_hermitian (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_projected_interaction_is_hermitian) ... ok
 test_repeated_and_distinct_occupation_vertex_factors (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_repeated_and_distinct_occupation_vertex_factors) ... ok
+test_unequal_time_connected_ctp_four_point_is_nonzero (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_unequal_time_connected_ctp_four_point_is_nonzero) ... ok
 test_vacuum_to_four_particle_vertex_normalization (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_vacuum_to_four_particle_vertex_normalization) ... ok
 test_weak_coupling_matches_leading_perturbation (test_real_time_fock_dynamics.RealTimeFockDynamicsTests.test_weak_coupling_matches_leading_perturbation) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 1.145s
+Ran 9 tests in 5.953s
 
 OK

@@ -13,7 +13,7 @@ Phase II: exact CTP hierarchy plus finite-volume real-time Hamiltonian dynamics 
 - Implemented a finite-volume normal-ordered Hamiltonian in the zero-total-momentum, even-Z2 Fock sector.
 - Evolved the free Gaussian vacuum through a `sech^2` interaction pulse with a DOP853 real-time solver.
 - Computed `N1`, `N2`, all Gaussian two-point contractions, `kappa4`, and `R2` for generic, opposite-momentum, and coincident-mode channels.
-- Computed equal-time spatial connected four-field correlator slices `F4c(t;0,0,0,r)` and time-resolved mode-projected cumulants.
+- Computed equal-time spatial connected four-field correlator slices `F4c(t;0,0,0,r)`, time-resolved mode-projected cumulants, and selected unequal-time all-forward-branch CTP four-point components.
 - Scanned coupling strength, pulse duration, Fock cutoff, momentum-mode cutoff, and solver maximum step.
 - Passed eight automated tests, including Hermiticity, vacuum vertex normalization for repeated/distinct occupations, free-vacuum connected four-point vanishing, interaction-generated connected four-point, weak-coupling matching, and coincident-mode factorial moments.
 
@@ -28,7 +28,7 @@ Fock-space convergence is strong at `K=2`: for `lambda0/m^2=0.5`, the generic-ch
 ## Remaining work
 
 - Momentum-mode cutoff convergence is not yet sufficient for a continuum claim; the `K=6` to `K=7` change is about 0.65% and the sequence is not monotonic.
-- The numerical CTP four-point result currently covers equal-time spatial slices and selected mode projections, not the full independent-four-time `F4c(x1,x2;y1,y2)`.
+- The numerical CTP four-point result covers equal-time spatial slices and selected unequal-time all-forward-branch configurations; a full spacetime grid and all 16 contour-index components remain to be computed.
 - The exact CTP hierarchy couples to six-point information; a controlled 4PI / Bethe-Salpeter closure and its truncation error remain to be developed.
 - Higher-order perturbative coefficients have not yet been isolated analytically; the finite-Hilbert real-time evolution includes them implicitly within its truncation.
 - No infinite-volume or continuum extrapolation has been completed.
