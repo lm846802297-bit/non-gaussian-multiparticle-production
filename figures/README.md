@@ -1,10 +1,6 @@
-# Phase-II figures
+# Phase III CTP figures
 
-All figures are generated from `results/phase2-dynamics-001/result.json` by `plot_phase2_results.py`.
+- `phase3-ctp-components-vs-r.svg`: vector master showing the real and imaginary parts of selected connected CTP branch components as the spatial extent parameter varies from 1 to 3.
+- `plot_ctp_components_vs_r.py`: deterministic plotting source. It reads the Nmax=16 JSON outputs in `results/phase3-ctp-all-001/`.
 
-- `phase2_n2_over_leading.svg/png`: exact finite-Fock `N2` divided by the leading `O(lambda0^2)` result versus peak coupling.
-- `phase2_R2_vs_coupling.svg/png`: non-Gaussian connected correction relative to the Gaussian reconstruction.
-- `phase2_kappa4_time.svg/png`: time-resolved reference-mode connected number cumulant during and after the pulse.
-- `phase2_spatial_G4c.svg/png`: equal-time spatial connected four-field correlator at selected times.
-
-SVG is the vector master; PNG is a raster preview. Re-running the plotting script regenerates both formats.
+The figure is a finite-volume, finite-mode result at Kcut=1, not a continuum prediction. A PNG preview is retained in the local run archive but is not part of the Git commit; the SVG is the archival figure.

@@ -1,0 +1,52 @@
+Phase III: all 16 CTP contour components of connected four-point correlator
+Model: 1+1D normal-ordered real scalar lambda(t) phi^4; lambda(t)=0.2 sech^2(t), m=1, L=20, Kcut=1.
+Four event configurations; each has 16 branch assignments, evaluated at Nmax=12 and 16.
+
+A_r3: events=[[1.0, 0.0], [0.5, 1.0], [-0.5, 2.0], [-1.0, 3.0]]
+  basis dimensions: 455 -> 969
+  max relative Nmax convergence change: 2.705065e-12
+  max largest-time identity residual: 2.359479e-17
+  max complement-conjugation residual: 0.000000e+00
+  independent ++++ cross-check relative difference: 4.307754e-13
+  F4c ++++: (7.239407120993198e-06+2.9390929757479138e-05j)
+  F4c +++-: (-2.714810129746288e-05-1.779401211404524e-05j)
+  F4c ++--: (7.148905371707516e-06-3.045643291771968e-05j)
+
+B_r3_later_times: events=[[2.0, 0.0], [1.0, 1.0], [-1.0, 2.0], [-2.0, 3.0]]
+  basis dimensions: 455 -> 969
+  max relative Nmax convergence change: 4.595271e-12
+  max largest-time identity residual: 2.434800e-17
+  max complement-conjugation residual: 0.000000e+00
+  independent ++++ cross-check relative difference: 2.642228e-13
+  F4c ++++: (-7.261195975015455e-07-3.669441795635256e-05j)
+  F4c +++-: (-5.032696749013819e-06-3.3655897630270083e-06j)
+  F4c ++--: (-5.234063931228161e-08+3.89655013094259e-05j)
+
+A_r1: events=[[1.0, 0.0], [0.5, 0.3333333333333333], [-0.5, 0.6666666666666666], [-1.0, 1.0]]
+  basis dimensions: 455 -> 969
+  max relative Nmax convergence change: 2.599026e-12
+  max largest-time identity residual: 4.615442e-17
+  max complement-conjugation residual: 0.000000e+00
+  F4c ++++: (8.860331778594473e-06+3.533794439550004e-05j)
+  F4c +++-: (-3.2599467004760727e-05-2.149087307313797e-05j)
+  F4c ++--: (8.756016266396605e-06-3.662383830506735e-05j)
+
+A_r2: events=[[1.0, 0.0], [0.5, 0.6666666666666666], [-0.5, 1.3333333333333333], [-1.0, 2.0]]
+  basis dimensions: 455 -> 969
+  max relative Nmax convergence change: 2.356297e-12
+  max largest-time identity residual: 3.010882e-17
+  max complement-conjugation residual: 0.000000e+00
+  F4c ++++: (8.224003510130806e-06+3.300933479968675e-05j)
+  F4c +++-: (-3.0465035751311986e-05-2.0042855594050533e-05j)
+  F4c ++--: (8.125045384569686e-06-3.420887105177962e-05j)
+
+Global validation:
+  all_16_components_per_configuration: True
+  configurations: 4
+  total_component_values: 64
+  max_complement_conjugation_error: 0.0
+  max_largest_time_identity_absolute_residual: 4.6154424084372987e-17
+  max_relative_Nmax12_to_Nmax16_change: 4.595271380609845e-12
+  independent_all_forward_crosscheck_max_relative_difference: 4.3077536489751703e-13
+  unit_tests: 6 passed
+  scope_limit: Selected spacetime configurations only; not a full continuous four-coordinate grid or continuum extrapolation.
