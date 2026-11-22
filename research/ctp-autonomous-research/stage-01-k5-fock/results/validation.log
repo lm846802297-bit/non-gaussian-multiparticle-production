@@ -1,0 +1,24 @@
+test_free_derivative (test_scan.ScanTest.test_free_derivative) ... built H: 56 192 0.00s
+ok
+test_nonzero_coupling (test_scan.ScanTest.test_nonzero_coupling) ... built H: 56 192 0.00s
+ok
+test_against_monomials_at_nonzero_x (test_independent_source.Check.test_against_monomials_at_nonzero_x) ... ok
+test_vacuum_no_one_particle_matrix_element (test_independent_source.Check.test_vacuum_no_one_particle_matrix_element) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 6.299s
+
+OK
+test_all_16_components_have_small_sd_residual (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_16_components_have_small_sd_residual) ... ok
+test_all_branch_fock_cutoff_convergence (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_branch_fock_cutoff_convergence) ... ok
+test_all_forward_matches_independent_time_ordered_engine (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_forward_matches_independent_time_ordered_engine) ... ok
+test_complement_branch_conjugation (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_complement_branch_conjugation) ... ok
+test_ctp_largest_time_identity (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_ctp_largest_time_identity) ... ok
+test_free_vacuum_connected_four_point (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_free_vacuum_connected_four_point) ... ok
+test_kcut_scan_results_are_archived_and_finite (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_kcut_scan_results_are_archived_and_finite) ... ok
+test_second_spacetime_configuration (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_second_spacetime_configuration) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK
