@@ -1,0 +1,11 @@
+test_all_reported_states_preserve_norm_and_hermiticity (test_phase6_extended_scan.Phase6ExtendedScanTests.test_all_reported_states_preserve_norm_and_hermiticity) ... ok
+test_k3_fock_cutoff_change_is_small_for_source (test_phase6_extended_scan.Phase6ExtendedScanTests.test_k3_fock_cutoff_change_is_small_for_source) ... ok
+test_k3_time_stencil_refinement_reduces_residual (test_phase6_extended_scan.Phase6ExtendedScanTests.test_k3_time_stencil_refinement_reduces_residual) ... ok
+test_k4_nmax4_is_not_adequate_for_sd_residual (test_phase6_extended_scan.Phase6ExtendedScanTests.test_k4_nmax4_is_not_adequate_for_sd_residual) ... ok
+test_kcut_four_point_scan_is_not_monotonic (test_phase6_extended_scan.Phase6ExtendedScanTests.test_kcut_four_point_scan_is_not_monotonic) ... ok
+test_prefix_cache_matches_original_reference_exactly (test_phase6_extended_scan.Phase6ExtendedScanTests.test_prefix_cache_matches_original_reference_exactly) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

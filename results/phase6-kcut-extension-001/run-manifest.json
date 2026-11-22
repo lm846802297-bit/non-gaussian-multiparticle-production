@@ -1,0 +1,75 @@
+{
+  "run_id": "phase6-kcut-extension-001",
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4",
+  "units": "hbar=c=1",
+  "pulse": "lambda(t)=lambda0*sech(t/T)^2",
+  "initial_state": "free Gaussian vacuum",
+  "normal_ordering": "free mass-m vacuum with same finite-mode regulator",
+  "evolution_interval": [-12.0, 12.0],
+  "matched_k_scan": {
+    "Kcut": [1, 2, 3, 4],
+    "Nmax": 5,
+    "m": 1.0,
+    "L": 20.0,
+    "lambda0": 0.1,
+    "T": 1.0,
+    "h": 0.00625,
+    "a": 0.1,
+    "integrator": "DOP853",
+    "rtol": 2e-7,
+    "atol": 2e-9,
+    "max_step": 0.04,
+    "environment_thread_controls": {"OPENBLAS_NUM_THREADS": "1", "OMP_NUM_THREADS": "1"}
+  },
+  "k3_refinement": {
+    "Kcut": 3,
+    "Nmax": [5, 6],
+    "h": [0.00625, 0.003125],
+    "rtol": 2e-9,
+    "atol": 2e-11,
+    "max_step": 0.02
+  },
+  "k4_refinement": {
+    "Kcut": 4,
+    "Nmax": [4, 5],
+    "h": [0.00625, 0.003125],
+    "rtol": 2e-9,
+    "atol": 2e-11,
+    "max_step": 0.04,
+    "status": "Fock refinement recorded; Nmax=5 SD residual does not pass time-stencil convergence"
+  },
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "hardware": {
+    "cpu": "Intel Xeon Platinum 8573C",
+    "architecture": "x86_64",
+    "visible_cpu_count": 5,
+    "virtualization": "KVM"
+  },
+  "source_files": {
+    "reference_engine": "src/sd_residual.py",
+    "reference_engine_sha256": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
+    "cached_engine": "src/sd_residual_cached.py",
+    "cached_engine_sha256": "878a48bfb2ab59b38f493ceab8521738170908bc1e4bd534acf678e5aeed1052",
+    "test_source": "tests/test_phase6_extended_scan.py",
+    "test_source_sha256": "499d6e55a202dbeb32a18b48c197a5695033550b73acdf2b8d5adfd517f4a33c"
+  },
+  "validation": {
+    "unit_tests": 6,
+    "status": "passed",
+    "cached_engine_reference_comparison": "exact equality at stored double precision for K=1,Nmax=5",
+    "kcut_converged": false,
+    "k4_time_stencil_converged": false,
+    "continuum_extrapolation": false
+  },
+  "limitations": [
+    "K scan is non-monotonic and not converged.",
+    "K=4 Nmax=6 was not computed.",
+    "K=4 Nmax=5 SD residual does not decrease under time-stencil halving.",
+    "No continuum or infinite-volume extrapolation."
+  ]
+}

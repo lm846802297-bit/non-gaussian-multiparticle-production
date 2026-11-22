@@ -1,0 +1,109 @@
+{
+  "K3_fock_refinement": {
+    "Nmax5_to6_relative_change_F4c": 0.001268740323499792,
+    "Nmax5_to6_relative_change_M33": 2.5638551633930738e-05,
+    "Nmax5_to6_relative_change_source": 2.5640259204152166e-05,
+    "Nmax6_h003125_residual": 7.157604389541156e-06,
+    "Nmax6_h00625_residual": 2.6553075460965867e-05
+  },
+  "K4_fock_refinement": {
+    "Nmax4_residual_h003125": 0.0027162451383470235,
+    "Nmax4_residual_h00625": 0.0026981123867374276,
+    "Nmax4_to5_relative_change_F4c": 0.004333087565070415,
+    "Nmax4_to5_relative_change_M33": 0.0013803270445503538,
+    "Nmax4_to5_relative_change_source": 0.0013790651180894111,
+    "Nmax5_residual_h003125": 1.4036060006763089e-05,
+    "Nmax5_residual_h00625": 1.3010486194781427e-05,
+    "stencil_converged": false
+  },
+  "cached_engine_crosscheck": {
+    "K": 1,
+    "Nmax": 5,
+    "matches_original_stored_results_exactly": true
+  },
+  "limitations": [
+    "K scan is non-monotonic and not converged.",
+    "K=4 Nmax=6 not computed.",
+    "K=4 Nmax=5 SD residual is not time-stencil converged.",
+    "No continuum or infinite-volume extrapolation."
+  ],
+  "matched_K_scan": [
+    {
+      "K": 1,
+      "Nmax": 5,
+      "SD_relative_residual": 2.0417982816761644e-05,
+      "abs_F4c": 1.5196803371355422e-05,
+      "abs_M33": 0.0013147582764662894,
+      "abs_source": 0.0013152795387940757,
+      "atol": 2e-09,
+      "basis_dimension": 56,
+      "hermiticity_error": 1.3877787807814457e-17,
+      "max_step": 0.04,
+      "norm": 0.9999999999999987,
+      "rtol": 2e-07
+    },
+    {
+      "K": 2,
+      "Nmax": 5,
+      "SD_relative_residual": 1.7758051274990647e-05,
+      "abs_F4c": 3.7429412118586934e-05,
+      "abs_M33": 0.0033290568309741267,
+      "abs_source": 0.003330070718449296,
+      "atol": 2e-09,
+      "basis_dimension": 252,
+      "hermiticity_error": 1.3877787807814457e-17,
+      "max_step": 0.04,
+      "norm": 0.999999999999999,
+      "rtol": 2e-07
+    },
+    {
+      "K": 3,
+      "Nmax": 5,
+      "SD_relative_residual": 1.2901056371956964e-05,
+      "abs_F4c": 4.490696356408263e-05,
+      "abs_M33": 0.003805641368961898,
+      "abs_source": 0.003804123740847231,
+      "atol": 2e-09,
+      "basis_dimension": 792,
+      "hermiticity_error": 1.3877787807814457e-17,
+      "max_step": 0.04,
+      "norm": 1.000000000000001,
+      "rtol": 2e-07
+    },
+    {
+      "K": 4,
+      "Nmax": 5,
+      "SD_relative_residual": 1.3011628758497785e-05,
+      "abs_F4c": 3.928671098021941e-05,
+      "abs_M33": 0.0028860871543402744,
+      "abs_source": 0.002881716953228135,
+      "atol": 2e-09,
+      "basis_dimension": 2002,
+      "hermiticity_error": 1.3877787807814457e-17,
+      "max_step": 0.04,
+      "norm": 1.0,
+      "rtol": 2e-07
+    }
+  ],
+  "reference_source_sha256": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
+  "run_id": "phase6-kcut-extension-001",
+  "runtime": {
+    "blas_threads": 1,
+    "cpu_model": "Intel Xeon Platinum 8573C",
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "omp_threads": 1,
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0",
+    "virtualization": "KVM",
+    "visible_cpu_count": 5
+  },
+  "scope": "K=1..4 matched Nmax=5 scan, plus K3 and K4 Fock/time refinements",
+  "source_sha256": "878a48bfb2ab59b38f493ceab8521738170908bc1e4bd534acf678e5aeed1052",
+  "test_sha256": "499d6e55a202dbeb32a18b48c197a5695033550b73acdf2b8d5adfd517f4a33c",
+  "unit_tests": {
+    "count": 6,
+    "status": "passed"
+  }
+}

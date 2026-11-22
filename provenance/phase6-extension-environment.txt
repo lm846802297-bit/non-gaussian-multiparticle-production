@@ -1,0 +1,27 @@
+Phase VI-A execution environment
+
+OS: Linux 8f6949651646 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64
+Distribution/runtime platform: Linux-6.18.57-x86_64-with-glibc2.41
+Architecture: x86_64
+Virtualization: KVM
+CPU: INTEL(R) XEON(R) PLATINUM 8573C
+Visible CPUs: 5 (CPU IDs 0-4)
+Python: 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+NumPy: 2.3.5
+SciPy: 1.17.0
+BLAS thread controls: OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1
+
+Primary matched K-scan parameters:
+m=1, L=20, lambda0=0.1, T=1, Nmax=5, h=0.00625, a=0.1
+DOP853 rtol=2e-7, atol=2e-9, max_step=0.04
+K=1,2,3,4
+
+K=3 Fock refinement:
+Nmax=5,6; h=0.00625 and 0.003125 for Nmax=6
+DOP853 rtol=2e-9, atol=2e-11, max_step=0.02
+
+K=4 Fock refinement:
+Nmax=4,5; h=0.00625 and 0.003125
+DOP853 rtol=2e-9, atol=2e-11, max_step=0.04
+
+All calculations used the same finite-mode projected normal-ordered cubic source as the Hamiltonian. The reported K=4, Nmax=5 residual is not time-stencil converged.
