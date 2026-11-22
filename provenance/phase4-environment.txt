@@ -1,0 +1,16 @@
+Phase IV runtime environment
+Date: 2026-11-22
+OS: Linux 8f6949651646 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64 GNU/Linux
+Architecture: x86_64
+CPU: Intel Xeon Platinum 8573C
+Visible CPUs: 5 (CPU IDs 0-4)
+Virtualization: full (KVM)
+Python: 3.13.5
+NumPy: 2.3.5
+SciPy: 1.17.0
+Integrator: scipy.integrate.solve_ivp, DOP853
+BLAS threading for runs: OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1
+Hamiltonian solver tolerances: rtol=2e-9, atol=2e-11
+Maximum integration step: 0.02
+Model: finite-volume 1+1D real scalar field, periodic L=20, K=1, Fock cutoffs 8 and 10
+Interaction pulse: lambda(t)=0.1 sech^2(t), integration interval [-12,12]

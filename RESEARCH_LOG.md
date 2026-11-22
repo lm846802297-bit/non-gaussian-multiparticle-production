@@ -1,10 +1,10 @@
 
-## 2026-11-22 — All 16 CTP contour components
+## 2026-11-22 — Phase IV: six-field source and Schwinger-Dyson residual
 
-- Implemented a branch-state overlap construction: each subset of field insertions is evolved on the forward branch, and the CTP correlator is the overlap of backward- and forward-branch subset states.
-- Computed all 16 connected CTP components for four spacetime configurations (64 complex components total) at Kcut=1, Nmax=12 and 16.
-- Added a spatial-separation scan r=1,2,3 for a fixed unequal-time pattern and a second later-time configuration.
-- Verified the largest-time identity to a maximum absolute residual of 4.62e-17 and complement conjugation at stored floating-point precision.
-- The maximum relative Nmax=12 to 16 change across all 64 components is 4.60e-12.
-- Cross-checked the all-forward components against the earlier independent time-ordered implementation; maximum relative difference is below 4.31e-13.
-- Six automated tests pass. Current CTP all-branch results remain at Kcut=1 and cover selected configurations, not a full four-coordinate grid or continuum limit.
+- Implemented the projected normal-ordered cubic composite operator P_K :phi_K^3:_m, matching the finite-mode Hamiltonian rather than using an unprojected pointwise cube.
+- Computed M33=<T P_K:phi_1^3:_m phi_2 phi_3 phi_4> and the three M31(1;j) F2 terms for a noncoincident all-forward configuration.
+- Evaluated the time derivative by centered finite differences and the spatial derivative spectrally; independently compared spatial finite differences at a=0.05, 0.1, 0.2.
+- At Nmax=8, h=0.00625, the relative SD residual is 2.43384e-5; at h=0.003125 it is 6.12712e-6, consistent with O(h^2). A fit versus h^2 gives a zero-step residual intercept magnitude 8.86e-13.
+- Nmax=8 to 10 changes F4c, M33, and the connected source by 2.96e-9, 6.66e-10, and 6.58e-10 respectively.
+- Independently checked the projected cubic operator against the Hamiltonian commutator and against Fourier-projected phi^3 - 3 Delta_m(0) phi.
+- Six Phase-IV tests pass. The result covers one noncoincident all-forward configuration at Kcut=1; no continuum extrapolation is claimed.

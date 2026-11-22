@@ -1,0 +1,121 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python src/sd_residual.py --kcut 1 --nmax 8 --lambda0 0.1 --h <scan> --a <scan> --output results/phase4-sd-001/<file>.json",
+  "configuration": {
+    "atol": 2e-11,
+    "event_configuration": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "evolution_interval": [
+      -12.0,
+      12.0
+    ],
+    "fock_cutoffs": [
+      8,
+      10
+    ],
+    "initial_state": "free Gaussian vacuum",
+    "integrator": "DOP853",
+    "lambda0": 0.1,
+    "latest_event_index": 0,
+    "length": 20.0,
+    "mass": 1.0,
+    "max_step": 0.02,
+    "model": "1+1D normal-ordered real scalar lambda(t) phi^4",
+    "momentum_cutoff_K": 1,
+    "normal_order_tadpole": 0.07270141081892326,
+    "normal_ordering": "free mass-m vacuum with same finite mode regulator",
+    "observable": "all-forward connected F4c and projected normal-ordered six-field source M33; test of exact connected four-point Schwinger-Dyson equation",
+    "pulse": "lambda(t)=lambda0*sech(t/T)^2",
+    "pulse_duration_T": 1.0,
+    "retained_momentum_indices": [
+      -1,
+      0,
+      1
+    ],
+    "rtol": 2e-09,
+    "run_id": "phase4-sd-001",
+    "scope": "one noncoincident spacetime configuration; finite volume, K=1; no continuum extrapolation",
+    "space_stencil_values": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "spatial_derivative_crosscheck": "centered finite difference",
+    "spatial_derivative_primary": "spectral derivative in retained Fourier modes",
+    "time_derivative": "centered second-order finite difference",
+    "time_stencil_values": [
+      0.025,
+      0.0125,
+      0.00625,
+      0.003125
+    ],
+    "units": "hbar=c=1"
+  },
+  "limitations": [
+    "One noncoincident all-forward configuration only.",
+    "Finite volume L=20 and momentum cutoff K=1; no continuum or infinite-volume extrapolation.",
+    "Fock cutoff checked at Nmax=8 and 10 only.",
+    "Time derivative uses finite differences; Richardson intercept is a discretization diagnostic.",
+    "No other contour assignments or event configurations have been tested against the six-field source equation."
+  ],
+  "raw_files_sha256": {
+    "figures/phase4_sd_residual_vs_h.svg": "2890fd8a7e0cc01be40415514bc386534d4866c5d06892fc8e1d899824c34097",
+    "figures/phase4_spatial_stencil_error.svg": "278a5c0fb2ec37a27b69ff85e37c5edec2a7bda77b0c502baedf3d71181951cb",
+    "figures/plot_phase4_results.py": "3e9865e908eb8835025469a6c1c5fe7f803138240c1c3d07c2e7547310b2401d",
+    "provenance/phase4-environment.txt": "4f601c5e9f55d3bb83c368d20c55742523b29c455691f61d0db58355e80b2cb9",
+    "results/phase4-sd-001/config.json": "1d38978fff8db3959e5a6023f8518cb71794e1dd1fcc6e1ef094ba2bf800eef1",
+    "results/phase4-sd-001/free-vacuum.json": "457535d1a4698fd55c94b0c442058c25bdcafe9ce444e646585bc3a2e7120628",
+    "results/phase4-sd-001/result.json": "8d1272ed79f03e1e5ecd3bc7c5bd44429450772c2b3e0c76a0353b7cdb61103b",
+    "results/phase4-sd-001/spectral-n10-h0.00625-a0.2.json": "d0847b9f9745bebe6f7683f035b079aa834eb8ef41bdd78e274c6293c05a8892",
+    "results/phase4-sd-001/spectral-n8-h0.003125-a0.2.json": "ba6a6f126a0a2d28022d6d622eb7af2ce2ab02c684de317360a47f76511267ca",
+    "results/phase4-sd-001/spectral-n8-h0.00625-a0.05.json": "c23072314076d05db72e93260ea208d79132c0ee9b12ecb3bb7ed2bd0e9686b3",
+    "results/phase4-sd-001/spectral-n8-h0.00625-a0.1.json": "73bf45aed450060cba4867eb40f96fb56ffbbb50bfd271adcac33ac557dc9994",
+    "results/phase4-sd-001/spectral-n8-h0.00625-a0.2.json": "f36a42e4489e58d85f0ddcc071e05e2e4738eef657c2e5d1a046d71a31cf7560",
+    "results/phase4-sd-001/spectral-n8-h0.0125-a0.2.json": "8734c93c511bd67340458ced1f12dc95799a5747f52a403ceb5e41c53248ff04",
+    "results/phase4-sd-001/spectral-n8-h0.025-a0.2.json": "ca3c45ff05b6a6042e237e4e413c64af4fb98abd08747ae13e01d434b0ca4b98",
+    "results/phase4-sd-001/summary.txt": "77cbd37d98629b7864ccb9b75ae5ed920cc272aa18f5a2bf0d530ec3892baa56",
+    "results/phase4-sd-001/test-output.txt": "fb5a03a52009d0e434ad42cedd937d3ed2be7f4cbcad7d75953194f5c4e59e11",
+    "src/sd_residual.py": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
+    "tests/test_sd_residual.py": "f884156f495a8df952218392fdab095d7e288507d4a9f2d5290f84deecb21a5b",
+    "theory/09-numerical-six-point-source-and-sd-residual.md": "ee99bf6e3fd32c9229f7493826bf2368f732bae1b7fcd37ef5765f0822488c47"
+  },
+  "run_id": "phase4-sd-001",
+  "runtime": {
+    "blas_threads": 1,
+    "cpu_model": "Intel Xeon Platinum 8573C",
+    "kernel": "6.18.57",
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "omp_threads": 1,
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0",
+    "visible_cpu_count": 5
+  },
+  "source_sha256": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
+  "status": "completed_selected_configuration",
+  "test_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -v",
+  "test_source_sha256": "f884156f495a8df952218392fdab095d7e288507d4a9f2d5290f84deecb21a5b",
+  "validation_summary": {
+    "automated_tests": "6 passed",
+    "hamiltonian_hermiticity_error": 2.7755575615628914e-17,
+    "normal_ordering_fourier_projection": "passed, relative error <2e-12 on interior Fock subspace",
+    "out_state_norm": 1.0000000000000016,
+    "projected_cubic_commutator_identity": "passed, relative matrix-element error <4e-16 on interior Fock subspace"
+  }
+}

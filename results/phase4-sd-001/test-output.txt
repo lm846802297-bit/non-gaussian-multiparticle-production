@@ -1,0 +1,11 @@
+test_fock_cutoff_convergence_of_source_and_four_point (test_sd_residual.SDResidualTests.test_fock_cutoff_convergence_of_source_and_four_point) ... ok
+test_free_vacuum_connected_four_point_and_sd_residual (test_sd_residual.SDResidualTests.test_free_vacuum_connected_four_point_and_sd_residual) ... ok
+test_normal_ordered_cubic_matches_fourier_projected_phi_cube_minus_tadpole (test_sd_residual.SDResidualTests.test_normal_ordered_cubic_matches_fourier_projected_phi_cube_minus_tadpole) ... ok
+test_projected_cubic_matches_hamiltonian_commutator_away_from_fock_boundary (test_sd_residual.SDResidualTests.test_projected_cubic_matches_hamiltonian_commutator_away_from_fock_boundary) ... ok
+test_sd_residual_converges_with_time_stencil (test_sd_residual.SDResidualTests.test_sd_residual_converges_with_time_stencil) ... ok
+test_spatial_stencil_scan_is_stable (test_sd_residual.SDResidualTests.test_spatial_stencil_scan_is_stable) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.024s
+
+OK

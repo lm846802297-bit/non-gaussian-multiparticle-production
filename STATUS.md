@@ -4,13 +4,14 @@ Last updated: 2026-11-22
 
 ## Current phase
 
-Phase III: all 16 CTP contour components of the connected four-point function for selected spacetime configurations in the finite-volume 1+1D normal-ordered time-dependent `lambda(t) phi^4` model.
+Phase IV: direct six-field composite source and numerical validation of the connected four-point Schwinger-Dyson equation in the finite-volume 1+1D normal-ordered time-dependent `lambda(t) phi^4` model.
 
 ## Completed
 
 - Phase I: lowest-order Keldysh cut derivation and finite-volume perturbative benchmark.
-- Phase II: exact two- and connected four-point Schwinger-Dyson hierarchy; finite-volume all-orders-in-projected-Hamiltonian dynamics; selected equal-time and unequal-time all-forward correlators.
-- Phase III: direct branch-state overlap construction for all 16 CTP branch assignments; four spacetime configurations evaluated; three-point spatial-separation scan at fixed unequal times; Nmax=12 to 16 convergence; CTP largest-time and conjugation checks.
+- Phase II: exact two- and connected four-point Schwinger-Dyson hierarchy; finite-volume all-orders-in-projected-Hamiltonian dynamics; selected equal-time and unequal-time correlators.
+- Phase III: all 16 CTP branch assignments for four selected spacetime configurations; Fock-cutoff convergence and CTP identities.
+- Phase IV: direct evaluation of the projected normal-ordered six-field source `M33`, the three `M31*F2` subtraction terms, and the connected four-point Schwinger-Dyson residual for one noncoincident all-forward configuration.
 
 ## Phase III quantitative validation
 
@@ -19,17 +20,28 @@ Phase III: all 16 CTP contour components of the connected four-point function fo
 - Maximum largest-time identity residual: `4.62e-17` absolute.
 - Complement-conjugation residual: zero at stored floating-point precision.
 - Independent all-forward comparison with the previous time-ordered implementation: relative difference below `4.31e-13`.
-- Six automated tests pass.
-- Nmax=16 basis dimension: 969 for Kcut=1.
+- Six Phase-III automated tests pass.
+
+## Phase IV quantitative validation
+
+- Model parameters: m=1, L=20, Kcut=1, lambda0=0.1, T=1; event times are noncoincident and event 1 is latest.
+- Direct six-field source and connected subtraction evaluated with the same finite-mode projection as the Hamiltonian.
+- At Nmax=8, h=0.00625, the relative Schwinger-Dyson residual is `2.43384e-5`.
+- Halving the time stencil twice gives `6.12712e-6`; the residual follows the expected second-order stencil scaling.
+- Richardson fit of the complex residual versus h^2 gives a zero-step intercept magnitude `8.86e-13`.
+- Nmax=8 to 10 relative changes: F4c `2.96e-9`, M33 `6.66e-10`, connected source `6.58e-10`.
+- Spatial finite-difference derivatives agree with the spectral derivative within `2.06e-5` to `3.29e-4` over a=0.05 to 0.2.
+- Projected cubic operator independently checked against both the Hamiltonian commutator and Fourier-projected `phi^3 - 3 Delta_m(0) phi`.
+- Six Phase-IV automated tests pass; free-vacuum absolute SD residual is `2.30e-15`.
 
 ## Remaining work
 
-- Extend from selected configurations to a structured four-coordinate spacetime grid and additional time orderings.
-- Increase momentum-mode cutoff and assess Kcut convergence; current CTP all-branch results use Kcut=1.
-- Numerically evaluate the exact four-point Schwinger-Dyson residual, including the six-field composite source.
+- Repeat the six-field source and SD-residual test for additional spacetime configurations and contour assignments.
+- Increase momentum-mode cutoff and assess Kcut convergence; current Phase-III/IV calculations use Kcut=1.
+- Extend from selected configurations to a structured four-coordinate spacetime grid.
 - Derive and compare controlled six-point closures (2PI/Bethe-Salpeter versus 4PI) against the finite-Hilbert reference.
 - Complete continuum and infinite-volume extrapolations before making continuum-QFT claims.
 
 ## Scientific status
 
-All reported Phase-III numbers are finite-volume, finite-mode, finite-Fock-space results. The 16 contour components are complete for the four stored spacetime configurations, not for the entire spacetime domain. No final novelty claim is made.
+The Phase-IV result is a successful numerical check of one noncoincident all-forward connected four-point equation in a finite-volume, finite-mode Hamiltonian model. It is not a continuum or infinite-volume result. The exact hierarchy has not yet been closed or solved over the full spacetime domain. No final novelty claim is made.
