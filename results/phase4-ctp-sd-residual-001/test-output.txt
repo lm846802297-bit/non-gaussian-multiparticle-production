@@ -1,0 +1,13 @@
+test_all_sixteen_branch_components_exist (test_ctp_all_components.CTPAllComponentsTests.test_all_sixteen_branch_components_exist) ... ok
+test_complement_branch_components_are_conjugates (test_ctp_all_components.CTPAllComponentsTests.test_complement_branch_components_are_conjugates) ... ok
+test_equal_time_components_are_branch_independent (test_ctp_all_components.CTPAllComponentsTests.test_equal_time_components_are_branch_independent) ... ok
+test_free_vacuum_connected_components_vanish (test_ctp_all_components.CTPAllComponentsTests.test_free_vacuum_connected_components_vanish) ... ok
+test_interaction_generates_nonzero_connected_component (test_ctp_all_components.CTPAllComponentsTests.test_interaction_generates_nonzero_connected_component) ... ok
+test_largest_time_branch_independence (test_ctp_all_components.CTPAllComponentsTests.test_largest_time_branch_independence) ... ok
+test_free_gaussian_vacuum_has_wick_composite_source (test_ctp_four_point_sd_residual.CTPFourPointSDResidualTests.test_free_gaussian_vacuum_has_wick_composite_source) ... ok
+test_normal_ordered_phi3_matches_phi_cubed_subtraction_on_interior_columns (test_ctp_four_point_sd_residual.CTPFourPointSDResidualTests.test_normal_ordered_phi3_matches_phi_cubed_subtraction_on_interior_columns) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 21.673s
+
+OK

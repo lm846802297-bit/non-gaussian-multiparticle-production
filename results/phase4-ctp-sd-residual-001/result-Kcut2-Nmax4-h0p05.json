@@ -1,0 +1,82 @@
+{
+  "interaction_hermiticity_error": 6.938893903907228e-18,
+  "limitations": [
+    "Only the all-forward CTP component is used in this residual check.",
+    "Derivatives are central finite differences in t1 and x1.",
+    "Finite mode and Fock cutoffs; no continuum extrapolation.",
+    "The result is a numerical residual diagnostic, not a proof of the continuum Schwinger-Dyson identity."
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4, finite full Fock basis",
+  "parameters": {
+    "Kcut": 2,
+    "L": 20.0,
+    "Nmax": 4,
+    "T": 1.0,
+    "events": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "lambda0": 0.2,
+    "m": 1.0,
+    "t0": -12.0,
+    "tf": 12.0
+  },
+  "results": [
+    {
+      "F4c_center": [
+        2.4885319573637182e-05,
+        7.047123763864044e-05
+      ],
+      "K3c_composite_source": [
+        -0.0011219761185474123,
+        0.0015669575042498
+      ],
+      "SD_residual": [
+        4.320634632393847e-06,
+        -2.0112507000673344e-05
+      ],
+      "box_plus_mass_F4c": [
+        2.002734068884751e-05,
+        -4.204857187348891e-05
+      ],
+      "composite_hermiticity_error_max": 2.7755575615628914e-17,
+      "dtt_F4c": [
+        -7.934618368246603e-06,
+        -0.00011981094421020798
+      ],
+      "dxx_F4c": [
+        -3.076639483456933e-06,
+        -7.2911346980786265e-06
+      ],
+      "h": 0.05,
+      "lambda_over_6_K3c": [
+        -1.5706706056453665e-05,
+        2.193606487281557e-05
+      ],
+      "relative_residual_to_largest_term": 0.18265417682381005
+    }
+  ],
+  "run_id": "phase4-ctp-sd-residual-001",
+  "runtime": {
+    "cpu_count": 5,
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0"
+  }
+}

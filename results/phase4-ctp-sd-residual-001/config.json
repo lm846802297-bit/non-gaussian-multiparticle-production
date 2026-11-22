@@ -1,0 +1,25 @@
+{
+  "run_id": "phase4-ctp-sd-residual-001",
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4",
+  "units": "hbar=c=1",
+  "mass": 1.0,
+  "length": 20.0,
+  "lambda0": 0.2,
+  "pulse_duration_T": 1.0,
+  "pulse": "lambda(t)=lambda0*sech(t/T)^2",
+  "initial_state": "free Gaussian vacuum",
+  "normal_ordering": "free mass-m vacuum with the same finite mode regulator",
+  "evolution_interval": [-12.0, 12.0],
+  "event_points": [[1.0,0.0],[0.5,1.0],[-0.5,2.0],[-1.0,3.0]],
+  "integrator": "DOP853",
+  "rtol": 2e-9,
+  "atol": 2e-11,
+  "finite_difference_steps": [0.1,0.05,0.025,0.0125],
+  "runs": [
+    {"Kcut":1,"Nmax":4,"h":[0.1,0.05,0.025]},
+    {"Kcut":1,"Nmax":6,"h":[0.1,0.05,0.025,0.0125]},
+    {"Kcut":1,"Nmax":8,"h":[0.05]},
+    {"Kcut":2,"Nmax":4,"h":[0.05]}
+  ],
+  "observable": "E4=(Box_1+m^2)F4c + lambda(t1)/6 K3;3"
+}

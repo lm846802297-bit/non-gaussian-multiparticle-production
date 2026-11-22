@@ -1,0 +1,23 @@
+Phase IV preliminary diagnostic: connected four-point Schwinger-Dyson residual
+Composite source K_{3;3}=<T_C :phi_1^3: phi_2 phi_3 phi_4>_c, with the composite :phi^3: treated as one cumulant argument.
+Model: m=1, L=20, lambda0=0.2, T=1, event points ((1,0),(0.5,1),(-0.5,2),(-1,3)).
+
+Kcut=1 Nmax=4 h=0.025: rel_residual=3.06602916e-02, residual=[-8.299979970715276e-07, 1.0974793844213733e-06]
+Kcut=1 Nmax=4 h=0.05: rel_residual=3.13187238e-02, residual=[-8.207007670717669e-07, 1.139459919094898e-06]
+Kcut=1 Nmax=4 h=0.1: rel_residual=3.41178475e-02, residual=[-7.841356674257371e-07, 1.3069525305418935e-06]
+Kcut=1 Nmax=6 h=0.0125: rel_residual=3.21588143e-02, residual=[-8.62115865765451e-07, 1.151896583286458e-06]
+Kcut=1 Nmax=6 h=0.025: rel_residual=3.23237143e-02, residual=[-8.598365404258685e-07, 1.1623733832695748e-06]
+Kcut=1 Nmax=6 h=0.05: rel_residual=3.29939738e-02, residual=[-8.507578401343258e-07, 1.2042534271468596e-06]
+Kcut=1 Nmax=6 h=0.1: rel_residual=3.58292661e-02, residual=[-8.150611207691733e-07, 1.3713397264571414e-06]
+Kcut=1 Nmax=8 h=0.05: rel_residual=3.29917186e-02, residual=[-8.506417370469341e-07, 1.2042195136191796e-06]
+Kcut=2 Nmax=4 h=0.05: rel_residual=1.82654177e-01, residual=[4.320634632393847e-06, -2.0112507000673344e-05]
+
+Validated:
+- :Phi^3:=Phi^3-3 Delta_m(0) Phi on interior Fock columns (<2e-14).
+- In a free Gaussian vacuum, K_{3;3}=6 F12 F13 F14 while elementary F4c=0.
+- 8 combined unit tests pass.
+
+Interpretation:
+- Kcut=1 residual remains about 3.1-3.6% under the tested h and Nmax scans.
+- Kcut=2,Nmax=4 gives a much larger residual, but this basis is not Fock-converged.
+- The projected Fock equation is not yet matched to the continuum Schwinger-Dyson equation; no exact-equation closure claim is made.
