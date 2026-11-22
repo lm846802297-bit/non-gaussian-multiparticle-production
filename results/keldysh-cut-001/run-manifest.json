@@ -1,55 +1,78 @@
 {
-  "run_id": "keldysh-cut-001",
-  "status": "passed",
-  "purpose": "Independent leading-order four-cut Keldysh sum versus normalized Fock-state enumeration, plus explicit sech-squared pulse Fourier-transform check",
-  "model": "1+1D normal-ordered real scalar lambda(t) phi^4, free Gaussian vacuum, homogeneous pulse",
-  "source_file": "src/keldysh_cut_benchmark.py",
-  "source_sha256": "562c9818e85d2db5c6ee92658252ba9577101856aba9b2d6db117f8b0387f4a4",
-  "source_git_blob_sha": "2bf82444fc2ec349a1f22d6b10377395da4ca107",
-  "result_file": "results/keldysh-cut-001/result.json",
-  "result_sha256": "7f48080cb0a57fc6c5f1a0e872cbf4471a9a7463138fa38e39a29181ce19df72",
-  "test_file": "tests/test_keldysh_cut_benchmark.py",
-  "test_sha256": "65b973cd5a44b0a3de4cbb98f0376416876788c49325951065cbca10e3865260",
-  "test_output_file": "results/keldysh-cut-001/unittest-result.txt",
-  "test_output_sha256": "e68447423109e5673aa88e13e5d3dba22130ae313eee3bf07090570321a25ded",
-  "executed_source_revision": "source content pinned by SHA-256 and Git blob SHA; executed from a cleanly written source file in the ChatGPT Linux container before archival commit",
-  "command": "PYTHONPATH=. python -m unittest discover -s tests -p 'test_keldysh_cut_benchmark.py' -v",
-  "runtime": {
-    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
-    "os": "Linux, Debian 13 userspace",
-    "kernel": "6.18.57",
-    "architecture": "x86_64",
-    "cpu_model": "Intel Xeon Platinum 8573C",
-    "visible_cpu_count": 5,
-    "virtualization": "KVM",
-    "execution_environment": "ChatGPT Linux container"
-  },
-  "parameters": {
-    "m": 1.0,
-    "L": 20.0,
-    "T": 1.0,
-    "lambda0_over_m2": 0.1,
-    "delta_k": 0.3141592653589793,
-    "pulse": "lambda(t)=lambda0*sech(t/T)^2",
-    "momentum_cutoffs": [4, 6, 8, 10, 12, 16, 20, 24, 32, 40],
-    "measured_mode_indices": {
-      "generic": [1, 2],
-      "opposite": [1, -1],
-      "coincident": [1, 1]
-    },
-    "fourier_simpson_interval": "[-20T,20T]",
-    "fourier_simpson_subintervals": 200000
-  },
-  "validation": {
-    "unit_tests": "3 tests passed",
-    "cut_wightman_vs_fock_relative_tolerance": 5e-14,
-    "fourier_transform_relative_tolerance": 1e-10,
-    "checks": "The script asserts nonnegative spectra, agreement of independent cut and Fock sums at every cutoff/channel, and agreement of numerical Simpson transform with the analytic sech^2 transform."
-  },
+  "commands": [
+    "PYTHONPATH=. python src/keldysh_cut_benchmark.py",
+    "PYTHONPATH=. python -m unittest discover -s tests -p 'test_keldysh_cut_benchmark.py' -v"
+  ],
+  "executed_source_revision": "Exact source content is pinned by source_sha256 and source_git_blob_sha. The source was executed in the ChatGPT Linux container; the archival commit follows the run.",
   "limitations": [
     "Leading-order perturbation theory only, O(lambda0^2).",
     "No nonperturbative time evolution or full Gaussian subtraction at higher orders.",
     "Finite volume and momentum-sum truncation only; no infinite-volume or continuum extrapolation.",
     "No higher-order rescattering, loop corrections, or comparison with an exact Hamiltonian solver."
-  ]
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4, free Gaussian vacuum, homogeneous pulse",
+  "parameters": {
+    "L": 20.0,
+    "T": 1.0,
+    "delta_k": 0.3141592653589793,
+    "fourier_simpson_interval": "[-20T,20T]",
+    "fourier_simpson_subintervals": 200000,
+    "lambda0_over_m2": 0.1,
+    "m": 1.0,
+    "measured_mode_indices": {
+      "coincident": [
+        1,
+        1
+      ],
+      "generic": [
+        1,
+        2
+      ],
+      "opposite": [
+        1,
+        -1
+      ]
+    },
+    "momentum_cutoffs": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40
+    ],
+    "pulse": "lambda(t)=lambda0*sech(t/T)^2"
+  },
+  "purpose": "Independent leading-order four-cut Keldysh sum versus normalized Fock-state enumeration, plus explicit sech-squared pulse Fourier-transform check",
+  "result_file": "results/keldysh-cut-001/result.json",
+  "result_sha256": "b5ee107ae12e966a54ee2e3f51bc018b60a01c8910f8bb234f0290850496d3f0",
+  "run_id": "keldysh-cut-001",
+  "runtime": {
+    "architecture": "x86_64",
+    "cpu_model": "Intel Xeon Platinum 8573C",
+    "execution_environment": "ChatGPT Linux container",
+    "kernel": "6.18.57",
+    "os": "Linux, Debian 13 userspace",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "virtualization": "KVM",
+    "visible_cpu_count": 5
+  },
+  "source_file": "src/keldysh_cut_benchmark.py",
+  "source_git_blob_sha": "6145a3f381d1b4b3df097cab1adea2e5376be43a",
+  "source_sha256": "9f442bddf2445114962899d2f651e12c0569d0175ca378d53605c009ecde0558",
+  "status": "passed",
+  "test_file": "tests/test_keldysh_cut_benchmark.py",
+  "test_output_file": "results/keldysh-cut-001/unittest-result.txt",
+  "test_output_sha256": "eebac034afd49c879c7023a564896988e22eaaa132cadc7dec50c70e7578085d",
+  "test_sha256": "65b973cd5a44b0a3de4cbb98f0376416876788c49325951065cbca10e3865260",
+  "validation": {
+    "checks": "The script asserts nonnegative spectra, agreement of independent cut and Fock sums at every cutoff/channel, and agreement of numerical Simpson transform with the analytic sech^2 transform.",
+    "cut_wightman_vs_fock_relative_tolerance": 5e-14,
+    "fourier_transform_relative_tolerance": 1e-10,
+    "unit_tests": "3 tests passed"
+  }
 }

@@ -293,7 +293,7 @@
     ],
     "delta_k_over_m": 0.3141592653589793,
     "lambda0_over_m2": 0.1,
-    "m_over_m": 1.0,
+    "m": 1.0,
     "pulse": "lambda(t)=lambda0*sech(t/T)^2"
   },
   "runtime": {

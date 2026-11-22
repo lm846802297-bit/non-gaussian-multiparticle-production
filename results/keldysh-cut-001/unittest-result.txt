@@ -3,6 +3,6 @@ test_coincident_mode_uses_factorial_moment (test_keldysh_cut_benchmark.KeldyshCu
 test_cut_sum_matches_unordered_fock_sum (test_keldysh_cut_benchmark.KeldyshCutBenchmarkTests.test_cut_sum_matches_unordered_fock_sum) ... ok
 
 ----------------------------------------------------------------------
-Ran 3 tests in 0.421s
+Ran 3 tests in 0.420s
 
 OK

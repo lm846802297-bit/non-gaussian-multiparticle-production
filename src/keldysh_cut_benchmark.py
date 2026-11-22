@@ -128,7 +128,7 @@ def simpson_fourier(energy: float, extent_in_T: float = 20.0, steps: int = 200_0
 def main() -> None:
     output: dict[str, object] = {
         "parameters": {
-            "m_over_m": M,
+            "m": M,
             "L_times_m": L*M,
             "T_times_m": T*M,
             "lambda0_over_m2": LAMBDA0/(M*M),
