@@ -1,0 +1,10 @@
+Phase VII execution environment
+OS: Linux 6.18.57 x86_64 (KVM virtualized)
+CPU: Intel Xeon Platinum 8573C; 5 visible CPUs
+Python: 3.13.5
+NumPy: 2.3.5
+SciPy: 1.17.0
+Integrator: SciPy solve_ivp DOP853
+Thread limits: OPENBLAS_NUM_THREADS=1; OMP_NUM_THREADS=1
+Units: hbar=c=1; reference mass m=1
+Physics: L=20, lambda0=0.1, T=1
