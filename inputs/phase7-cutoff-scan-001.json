@@ -1,0 +1,16 @@
+{
+  "model": "1+1D real scalar lambda(t) phi^4 with free-mass Wick ordering and finite-volume momentum projection",
+  "units": "hbar=c=1; m=1 is the reference mass unit",
+  "hamiltonian": "H(t)=H0+lambda0*sech(t/T)^2/4! * integral_0^L dx :phi_K(x)^4:_m",
+  "field_modes": "p_n=2*pi*n/L, n=-K,...,+K",
+  "volume": {"L":20.0,"boundary_conditions":"periodic"},
+  "physics": {"reference_mass_m":1.0,"lambda0":0.1,"pulse_width_T":1.0,"coupling_profile":"lambda(t)=lambda0*sech(t/T)^2","normal_ordering":"free-vacuum Wick ordering at reference mass m=1, consistently applied to quartic Hamiltonian and cubic EOM source","composite_source_projection":"retain composite Fourier transfer Q with |Q|<=K"},
+  "events_A": [[1.0,0.0],[0.5,1.0],[-0.5,2.0],[-1.0,3.0]],
+  "differentiated_event":0,
+  "event_conditions":"four distinct physical times; event 0 is latest; no contour contact terms included",
+  "momentum_cutoffs":[1,2,3,4,5,6],
+  "fock_cutoffs":{"K1_to_K5_scan":5,"K3_CTP_scan":[5,6,7],"K4_Fock_check":[5,6],"K5_Fock_check":[4,5],"K6_exploratory":4},
+  "integrator":{"method":"DOP853","primary_rtol":2e-9,"primary_atol":2e-11,"primary_max_step":0.1,"crosscheck_rtol":2e-8,"crosscheck_atol":2e-10,"crosscheck_max_step":0.2,"time_stencils":[0.00625,0.003125,0.0015625]},
+  "threading":{"OPENBLAS_NUM_THREADS":1,"OMP_NUM_THREADS":1},
+  "execution_environment":"ChatGPT Linux"
+}
