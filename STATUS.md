@@ -1,22 +1,35 @@
-# Research Log
+# Research Status
 
-## 2026-11-22 — Project bootstrap
+Last updated: 2026-11-22
 
-- Established the working title and Phase-I model: finite-duration homogeneous interaction pulse in 1+1D `lambda phi^4`.
-- Fixed the initial target observables: `N1(k)`, `N2(k,q)`, Gaussian reconstruction `N2_G`, connected cumulant `kappa4`, and relative diagnostic `R2`.
-- Recorded prior work showing that general spectrum mappings, Gaussian HBT reconstruction, non-Gaussian initial conditions, four-point kinetic corrections, and MPS real-time `phi^4` studies are not new by themselves.
-- Provisional research gap: momentum-resolved connected outgoing two-particle spectrum generated dynamically from a Gaussian in-state under a finite interaction pulse. Priority remains subject to a deeper citation-chain audit.
-- No numerical computation has been run and no physics result is claimed.
+## Current phase
 
-## 2026-11-22 — Four-cut Keldysh verification and pulse benchmark
+Phase I: lowest-order Keldysh cut verification and finite-volume perturbative benchmark for the time-dependent, normal-ordered 1+1D `lambda(t) phi^4` model.
 
-- Derived the cross-branch cut expression with four Wightman lines: two measured lines at `k,q` and two unobserved lines summed over `r,s`.
-- Counted the contractions explicitly: `(4*3)^2 * 2! / (4!)^2 = 1/2`.
-- Rewrote the cut expression as a finite-volume momentum sum and independently compared it with an unordered normalized-Fock-state enumeration.
-- Selected `lambda(t)=lambda0 sech^2(t/T)` and used `lambda_tilde(Omega)=lambda0*pi*T^2*Omega/sinh(pi*T*Omega/2)`.
-- Evaluated generic `(k,q)=(1,2)`, opposite `(1,-1)`, and coincident `(1,1)` channels for `m=1`, `L=20`, `T=1`, `lambda0/m^2=0.1`.
-- Cut and Fock sums agree at relative precision better than `5e-16` for the reported cutoffs. Momentum-sum changes from cutoff 20 to 24 are at or below `2.94e-15` for the three channels.
-- Analytic pulse Fourier transform agrees with 200,000-interval Simpson integration to relative errors between `2.44e-14` and `5.42e-12` at the tested frequencies.
-- Three automated tests passed. The test suite verifies cut/Fock equivalence, the coincident-mode factorial moment, and the pulse Fourier transform.
-- During exploratory validation, an initial Fock enumerator used `n_k^2` in the coincident channel. This was corrected to the operator-required `n_k(n_k-1)`; the corrected independent enumeration agrees with the cut expression. The earlier discrepancy was a validation-code error, not a change to the analytic cut formula.
-- No nonperturbative real-time simulation or continuum extrapolation has been performed.
+## Completed in the research branch
+
+- Derived the leading `O(lambda0^2)` cross-branch contribution to the distinct-mode two-particle inclusive spectrum.
+- Derived the normalized finite-volume vacuum-to-four-particle amplitude, including repeated-mode Bose factors.
+- Derived the four-cut-Wightman representation and its residual symmetry factor `1/2`.
+- Independently evaluated the same leading spectrum by an unordered normalized-Fock-state sum.
+- Verified cut-Wightman and Fock-state sums for generic, opposite-momentum, and coincident-mode channels; the coincident channel uses `n_k (n_k - 1)`.
+- Selected `lambda(t) = lambda0 sech^2(t/T)` and derived its analytic Fourier transform.
+- Checked the Fourier transform against numerical Simpson integration at four frequencies.
+- Evaluated finite-volume momentum sums and demonstrated cutoff convergence for the chosen parameters.
+- Added three automated tests; all passed.
+
+## Quantitative benchmark
+
+For `m=1`, `L=20`, `T=1`, `lambda0/m^2=0.1`, and measured mode indices `(1,2)`, `(1,-1)`, `(1,1)`, the cutoff-24 leading spectra are recorded in `results/keldysh-cut-001/result.json` and explained in `theory/05-keldysh-cut-propagators-and-pulse-benchmark.md`.
+
+## Not completed
+
+- Higher-order corrections and the complete next-to-leading-order cumulant.
+- Full nonperturbative finite-volume Hamiltonian evolution.
+- Infinite-volume and continuum extrapolations.
+- Independent comparison with an exact Hamiltonian solver.
+- Complete citation-chain novelty audit.
+
+## Scope of validation
+
+The completed checks validate the leading perturbative cut/Fock equivalence, the Bose combinatorics, the analytic pulse transform, and momentum-sum convergence for this benchmark. They do not validate nonperturbative dynamics or establish a final novelty claim.
