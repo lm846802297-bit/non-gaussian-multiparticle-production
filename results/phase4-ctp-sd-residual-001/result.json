@@ -1,0 +1,305 @@
+{
+  "common_parameters": {
+    "L": 20.0,
+    "T": 1.0,
+    "atol": 2e-11,
+    "events": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "integrator": "DOP853",
+    "lambda0": 0.2,
+    "m": 1.0,
+    "rtol": 2e-09
+  },
+  "composite_source_definition": "K3;3 is the fourth cumulant treating A1=:phi_1^3:_m as one composite variable and phi_2,phi_3,phi_4 as the other variables.",
+  "equation": "(Box_1+m^2) F4c + lambda(t1)/6 K3;3 = 0 for noncoincident points",
+  "interpretation": "The composite source construction is validated. The finite-projection SD residual is not zero and is not a continuum verification. The projected Fock algebra and momentum cutoff must be treated explicitly before interpreting the residual.",
+  "limitations": [
+    "Finite momentum and Fock cutoffs only.",
+    "Finite differences in t1 and x1.",
+    "Only all-forward CTP component used for the SD residual.",
+    "A Kcut1,Nmax12 residual run did not complete within the 300-second execution limit; no result is claimed.",
+    "No continuum or infinite-volume extrapolation."
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4, lambda(t)=lambda0 sech(t/T)^2",
+  "run_id": "phase4-ctp-sd-residual-001",
+  "runs": [
+    {
+      "F4c_center": [
+        7.294072307626603e-06,
+        2.947084302682909e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007914516042811605,
+        0.0011720634284680667
+      ],
+      "Kcut": 1,
+      "Nmax": 4,
+      "SD_residual": [
+        -8.299979970715276e-07,
+        1.0974793844213733e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0249647550506641e-05,
+        -1.531040617227044e-05
+      ],
+      "file": "result-Nmax4-h0p025.json",
+      "h": 0.025,
+      "lambda_over_6_K3c": [
+        -1.1079645547578169e-05,
+        1.6407885556691813e-05
+      ],
+      "relative_residual_to_largest_term": 0.03066029156736151
+    },
+    {
+      "F4c_center": [
+        7.294072307626603e-06,
+        2.947084302682909e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007914516042811605,
+        0.0011720634284680667
+      ],
+      "Kcut": 1,
+      "Nmax": 4,
+      "SD_residual": [
+        -8.207007670717669e-07,
+        1.139459919094898e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0258944780506402e-05,
+        -1.5268425637596915e-05
+      ],
+      "file": "result-Nmax4-h0p05.json",
+      "h": 0.05,
+      "lambda_over_6_K3c": [
+        -1.1079645547578169e-05,
+        1.6407885556691813e-05
+      ],
+      "relative_residual_to_largest_term": 0.03131872376285632
+    },
+    {
+      "F4c_center": [
+        7.294072307626603e-06,
+        2.947084302682909e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007914516042811605,
+        0.0011720634284680667
+      ],
+      "Kcut": 1,
+      "Nmax": 4,
+      "SD_residual": [
+        -7.841356674257371e-07,
+        1.3069525305418935e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0295509880152431e-05,
+        -1.510093302614992e-05
+      ],
+      "file": "result-Nmax4-h0p1.json",
+      "h": 0.1,
+      "lambda_over_6_K3c": [
+        -1.1079645547578169e-05,
+        1.6407885556691813e-05
+      ],
+      "relative_residual_to_largest_term": 0.03411784745969439
+    },
+    {
+      "F4c_center": [
+        7.239364351405847e-06,
+        2.9390787877393333e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007928062067500733,
+        0.0011715483226901306
+      ],
+      "Kcut": 1,
+      "Nmax": 6,
+      "SD_residual": [
+        -8.62115865765451e-07,
+        1.151896583286458e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0236492957813731e-05,
+        -1.5248777933073679e-05
+      ],
+      "file": "result-Nmax6-h0p0125.json",
+      "h": 0.0125,
+      "lambda_over_6_K3c": [
+        -1.1098608823579182e-05,
+        1.6400674516360137e-05
+      ],
+      "relative_residual_to_largest_term": 0.03215881425951852
+    },
+    {
+      "F4c_center": [
+        7.239364351405847e-06,
+        2.9390787877393333e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007928062067500733,
+        0.0011715483226901306
+      ],
+      "Kcut": 1,
+      "Nmax": 6,
+      "SD_residual": [
+        -8.598365404258685e-07,
+        1.1623733832695748e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0238772283153313e-05,
+        -1.5238301133090562e-05
+      ],
+      "file": "result-Nmax6-h0p025.json",
+      "h": 0.025,
+      "lambda_over_6_K3c": [
+        -1.1098608823579182e-05,
+        1.6400674516360137e-05
+      ],
+      "relative_residual_to_largest_term": 0.03232371433247626
+    },
+    {
+      "F4c_center": [
+        7.239364351405847e-06,
+        2.9390787877393333e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007928062067500733,
+        0.0011715483226901306
+      ],
+      "Kcut": 1,
+      "Nmax": 6,
+      "SD_residual": [
+        -8.507578401343258e-07,
+        1.2042534271468596e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0247850983444856e-05,
+        -1.5196421089213277e-05
+      ],
+      "file": "result-Nmax6-h0p05.json",
+      "h": 0.05,
+      "lambda_over_6_K3c": [
+        -1.1098608823579182e-05,
+        1.6400674516360137e-05
+      ],
+      "relative_residual_to_largest_term": 0.032993973779726585
+    },
+    {
+      "F4c_center": [
+        7.239364351405847e-06,
+        2.9390787877393333e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007928062067500733,
+        0.0011715483226901306
+      ],
+      "Kcut": 1,
+      "Nmax": 6,
+      "SD_residual": [
+        -8.150611207691733e-07,
+        1.3713397264571414e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0283547702810009e-05,
+        -1.5029334789902996e-05
+      ],
+      "file": "result-Nmax6-h0p1.json",
+      "h": 0.1,
+      "lambda_over_6_K3c": [
+        -1.1098608823579182e-05,
+        1.6400674516360137e-05
+      ],
+      "relative_residual_to_largest_term": 0.035829266063231155
+    },
+    {
+      "F4c_center": [
+        7.239407341619666e-06,
+        2.9390930387713718e-05
+      ],
+      "K3c_composite_source": [
+        -0.0007928098475744405,
+        0.0011715483469747468
+      ],
+      "Kcut": 1,
+      "Nmax": 8,
+      "SD_residual": [
+        -8.506417370469341e-07,
+        1.2042195136191796e-06
+      ],
+      "box_plus_mass_F4c": [
+        1.0248018054959465e-05,
+        -1.5196455342704814e-05
+      ],
+      "file": "result-Nmax8-h0p05.json",
+      "h": 0.05,
+      "lambda_over_6_K3c": [
+        -1.10986597920064e-05,
+        1.6400674856323993e-05
+      ],
+      "relative_residual_to_largest_term": 0.03299171856874683
+    },
+    {
+      "F4c_center": [
+        2.4885319573637182e-05,
+        7.047123763864044e-05
+      ],
+      "K3c_composite_source": [
+        -0.0011219761185474123,
+        0.0015669575042498
+      ],
+      "Kcut": 2,
+      "Nmax": 4,
+      "SD_residual": [
+        4.320634632393847e-06,
+        -2.0112507000673344e-05
+      ],
+      "box_plus_mass_F4c": [
+        2.002734068884751e-05,
+        -4.204857187348891e-05
+      ],
+      "file": "result-Kcut2-Nmax4-h0p05.json",
+      "h": 0.05,
+      "lambda_over_6_K3c": [
+        -1.5706706056453665e-05,
+        2.193606487281557e-05
+      ],
+      "relative_residual_to_largest_term": 0.18265417682381005
+    }
+  ],
+  "runtime": {
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0",
+    "visible_cpu_count": 5
+  },
+  "status": "preliminary_regulated_residual_diagnostic",
+  "validation": {
+    "Fock_scan": "Kcut1 residual relative changes about 3.1-3.4% for Nmax4,6,8 at h=0.05",
+    "combined_unit_tests": "8 passed",
+    "composite_operator_hermiticity": "passed; <3e-17 in tested matrices",
+    "finite_difference_scan": "Nmax6 relative residual remains about 3.2-3.6% for h=0.1 to 0.0125",
+    "free_gaussian_composite_cumulant": "passed; K3;3=6 F12 F13 F14, while elementary F4c=0",
+    "mode_cutoff_warning": "Kcut2,Nmax4 gives about 18.3% relative residual; this low Fock cutoff is not converged and cannot be interpreted as a mode-cutoff effect alone",
+    "normal_ordered_phi3_matrix_identity": "passed; on interior Fock columns :Phi^3:=Phi^3-3 Delta_m(0) Phi to <2e-14"
+  }
+}
