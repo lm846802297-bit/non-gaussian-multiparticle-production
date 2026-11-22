@@ -1,0 +1,8 @@
+test_constant_energy_exact_and_reversal (test_cf4.Check.test_constant_energy_exact_and_reversal) ... ok
+test_free_all_forward_matches_wick (test_cf4.Check.test_free_all_forward_matches_wick) ... ok
+test_noncommuting_order_four (test_cf4.Check.test_noncommuting_order_four) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.030s
+
+OK
