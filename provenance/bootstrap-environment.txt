@@ -1,0 +1,8 @@
+capture_utc=2026-11-22T09:54:23Z
+uname=Linux 9b264041794f 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64 GNU/Linux
+arch=x86_64
+git_version=git version 2.47.3
+python_version=Python 3.13.5
+cpu_model=
+cpu_count=5
+memory_kb=6090668
