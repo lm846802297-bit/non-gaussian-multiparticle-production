@@ -127,7 +127,7 @@
     "src/run_kcut7_supplement.py": "0f4f93cddc08db18d820457cac6db9d830913c94b1b746f3b4883197d0d4607c",
     "src/run_phase2_study.py": "20cd8af6c050e0246254358ac00c7eb1908279db434dfaaafcc4367abc93efbf",
     "tests/test_real_time_fock_dynamics.py": "fa179c3fe2fac49c4dfe49e94157a512e64d2da5ea47dfb47e72cdfced3deff6",
-    "theory/06-exact-ctp-hierarchy-and-nonperturbative-dynamics.md": "c0b07a566977feb55f051d73a02d5e75deccc138f2f742e8a49d077a439c8f9f"
+    "theory/06-exact-ctp-hierarchy-and-nonperturbative-dynamics.md": "eae786474d65a8fba263b2e34d72d615016d67e1f05b8b3a96dadfdc7180d4d5"
   },
   "status": "completed_with_explicit_cutoff_limitations",
   "validation": {

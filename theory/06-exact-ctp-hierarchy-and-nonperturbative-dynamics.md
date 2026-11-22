@@ -211,6 +211,6 @@ For \(\lambda_0/m^2=0.2\), \(mT=1\), \(K=2\), \(N_{\max}=8\), the generic-channe
 - The projected interaction matrix is Hermitian to numerical precision.
 - State norm is conserved to approximately \(10^{-12}\) or better in the reported runs.
 - The time-step scan with step sizes reduced by factors of two and four gives indistinguishable displayed \(N_2\) values.
-- Five unit tests pass, including the normalized four-particle vertex coefficient, zero-coupling limit, weak-coupling agreement with the leading perturbative result, Hermiticity, and coincident-mode factorial moment.
+- Eight unit tests pass, including the normalized four-particle vertex coefficient, zero-coupling limit, weak-coupling agreement with the leading perturbative result, Hermiticity, and coincident-mode factorial moment.
 - Fock-space cutoff convergence is demonstrated at \(K=2\); momentum-mode cutoff convergence remains open.
 - The calculation is a finite-mode, finite-Fock-space Hamiltonian simulation. It does not yet include a continuum extrapolation, infinite-volume extrapolation, or full unequal-time CTP four-point reconstruction.
