@@ -1,0 +1,56 @@
+{
+  "run_id": "phase7-cutoff-scan-001",
+  "base_commit": "bbad28cd616b39afeac941200e777e06e76879d8",
+  "model": "1+1D finite-volume normal-ordered real scalar lambda(t) phi^4",
+  "fixed_parameters": {"m": 1.0, "L": 20.0, "lambda0": 0.1, "T": 1.0, "Nmax_scan": 5, "h": 0.00625},
+  "momentum_scan": [
+    {"K":1,"basis_dimension":56,"Lambda_over_m":0.314159,"F4c_abs":1.51968e-5,"source_abs":1.31528e-3},
+    {"K":2,"basis_dimension":252,"Lambda_over_m":0.628319,"F4c_abs":3.74294e-5,"source_abs":3.33007e-3},
+    {"K":3,"basis_dimension":792,"Lambda_over_m":0.942478,"F4c_abs":4.49070e-5,"source_abs":3.80412e-3},
+    {"K":4,"basis_dimension":2002,"Lambda_over_m":1.256637,"F4c_abs":3.92867e-5,"source_abs":2.88172e-3},
+    {"K":5,"basis_dimension":4368,"Lambda_over_m":1.570796,"F4c_abs":4.15589e-5,"source_abs":3.67689e-3}
+  ],
+  "adjacent_cutoff_changes_percent": [
+    {"K":"1->2","F4c":146.30,"source":153.18},
+    {"K":"2->3","F4c":19.98,"source":14.24},
+    {"K":"3->4","F4c":-12.52,"source":-24.25},
+    {"K":"4->5","F4c":5.78,"source":27.59}
+  ],
+  "K3_all16_CTP": {
+    "Nmax5":{"basis_dimension":792,"max_relative_SD_residual":1.28665e-3},
+    "Nmax6":{"basis_dimension":1716,"max_relative_SD_residual":7.04053e-6},
+    "Nmax7":{"basis_dimension":3432,"max_relative_SD_residual":5.50396e-6},
+    "Nmax6_to_7_max_relative_change":{"F4c":2.101e-5,"M33":2.668e-6,"connected_source":2.688e-6},
+    "Nmax7_largest_time_F4c_error":2.025e-11,
+    "complement_conjugation_error":0.0
+  },
+  "other_fock_checks": {
+    "K4_Nmax5_to_6_relative_change":{"F4c":1.819e-3,"M33":3.615e-5,"source":3.622e-5},
+    "K5_Nmax4_to_5_relative_change":{"F4c":5.193e-3,"M33":9.196e-4,"source":9.177e-4}
+  },
+  "K4_Nmax6_time_stencil": {
+    "h_0.00625_SD_residual":2.70945e-5,
+    "h_0.003125_SD_residual":9.16434e-6,
+    "residual_reduction_factor":2.956,
+    "F4c_and_source_relative_change_below":1e-12
+  },
+  "K3_Nmax7_independent_allforward_crosscheck": {
+    "relative_difference_F4c":8.00e-10,
+    "relative_difference_M33":8.96e-12,
+    "relative_difference_source":1.40e-11
+  },
+  "K6_Nmax4_exploratory": {
+    "basis_dimension":2380,
+    "Lambda_over_m":1.884956,
+    "SD_relative_residual":1.874e-3,
+    "status":"not Fock-converged"
+  },
+  "tests":{"passed":13,"failed":0},
+  "scientific_boundary":{
+    "continuum_limit":"not established",
+    "infinite_volume_limit":"not attempted",
+    "K5_Nmax6":"pending",
+    "K4_Nmax6_all16_CTP":"pending",
+    "K6_Nmax5":"pending"
+  }
+}
