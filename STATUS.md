@@ -4,23 +4,28 @@ Last updated: 2026-11-22
 
 ## Current phase
 
-Phase 0: project initialization, literature positioning, and analytical setup.
+Phase I: lowest-order Keldysh/Dyson derivation for the time-dependent 1+1D normal-ordered lambda(t) phi^4 model.
 
-## Completed in this archive
+## Completed in this branch
 
-- Defined the research question and first controlled model.
-- Identified the target observables `N1`, `N2`, and the connected four-operator cumulant `kappa4`.
-- Recorded key prior work on non-Gaussian initial conditions, nonequilibrium scalar-field evolution, kinetic equations beyond Boltzmann, and field-theoretic particle interferometry.
-- Recorded a provisional novelty gap and the work needed to test it.
+- Re-derived the in-in expansion for the normal-ordered out-mode pair number operator.
+- Identified the first nonzero contribution as the cross-branch term with one interaction vertex on each Keldysh branch, at O(lambda_0^2).
+- Derived the normalized finite-volume first-order vacuum-to-four-particle amplitude, including repeated-mode Bose factors.
+- Derived the finite-volume occupation-state sum for the leading inclusive N2(k,q).
+- Established the leading order separation N2_G = O(lambda_0^4) versus N2 = O(lambda_0^2) for distinct modes under the stated normal-ordering, free-vacuum, and homogeneous-pulse assumptions.
+- Distinguished the O(lambda_0) anomalous four-annihilator coherence from the O(lambda_0^2) number-type connected cumulant.
+- Independently checked the quartic-vertex occupation-number combinatorics for five representative repeated/distinct-mode patterns; all five tests passed.
 
 ## Not completed
 
-- Full closed-time-path equation for the dynamically generated connected four-point function.
-- Explicit perturbative evaluation of `kappa4(k,q)` for the finite interaction pulse.
-- Finite-volume Hamiltonian implementation.
-- Numerical results, convergence tests, and independent validation.
-- A definitive novelty claim based on a complete citation-chain review.
+- Full independent derivation of all contour-index and Wightman-projection factors.
+- Explicit evaluation for the selected smooth pulse.
+- Higher-order corrections and complete next-to-leading-order cumulant.
+- Numerical finite-volume Hamiltonian implementation.
+- Cutoff, volume, and time-step convergence.
+- Independent comparison with a full quantum solver.
+- Complete citation-chain novelty audit.
 
-## Decision gate
+## Current decision
 
-Proceed to implementation only after the lowest nonzero perturbative order and the exact out-mode projection have been independently checked. If a prior paper is found to have already computed the same momentum-resolved outgoing connected two-particle spectrum for the same dynamical setting, revise the target before committing to large-scale computation.
+The leading finite-volume expression is explicit. The Bose factors in the four-particle vertex matrix element passed an independent combinatorial check. Proceed next to an independent Keldysh/Dyson comparison and an explicit finite-pulse momentum-sum evaluation. No full physical spectrum has yet been computed.
