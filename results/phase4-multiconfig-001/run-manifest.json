@@ -107,8 +107,9 @@
     "cpu_count": 5,
     "kernel": "6.18.57",
     "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
-    "processor": "",
-    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+    "processor": "Intel Xeon Platinum 8573C",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "virtualization": "KVM"
   },
   "scope_limitations": [
     "Kcut=1 only; momentum-mode convergence is not established",
@@ -118,7 +119,7 @@
     "Does not compare 2PI/4PI closures"
   ],
   "sha256": {
-    "provenance/phase4-multiconfig-environment.txt": "3ffdc5b8c96df062eba3753ce5f9c27b475ae10d56d42ffedb0ca632265b428a",
+    "provenance/phase4-multiconfig-environment.txt": "fee0fa38e28415d8acb7218654c263a72e9293d629f352c5c20972400329dbef",
     "results/phase4-multiconfig-001/A_N10_h0p003125.json": "660ba18ff937ca97c49d131b995dfd8777263c953381db5986f92f3b4229dc3b",
     "results/phase4-multiconfig-001/A_N8_h0p0015625.json": "7f9482ac09e806f4f9b0971ca99a3f395d243562598eff552cf845fc5fef8f35",
     "results/phase4-multiconfig-001/A_reference.json": "26fb680158b18d8699d78b50e46db4d17ac714e64261863696c735cd54c9b4d7",
@@ -128,7 +129,8 @@
     "results/phase4-multiconfig-001/summary.json": "4b54a8c76892a5e634eac26669d88a7b9f8bd452357bc9bec9fef40a79970515",
     "src/run_multiconfig_sd.py": "cb56034111ebca1ddaa405ee089af210c1098e89c76e7da34f7aa4db3c9076d5",
     "src/sd_residual.py": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
-    "tests/test_multiconfig_sd.py": "ef5a278bfba37309dc79a7a4184dc0ceedeb9dfb0621cc376b4823772ec1d186"
+    "tests/test_multiconfig_sd.py": "ef5a278bfba37309dc79a7a4184dc0ceedeb9dfb0621cc376b4823772ec1d186",
+    "theory/10-multiconfiguration-sd-validation.md": "e9d8a36d96964716e2d5ed3c865b1c6bb6ddfb57d1305e92ba2ecab57026edf5"
   },
   "status": "completed",
   "validation": "5 automated tests pass; spatial-translation invariance of F4c/M33/source; time-stencil refinement; Fock-cutoff refinement; source/derivative cancellation"

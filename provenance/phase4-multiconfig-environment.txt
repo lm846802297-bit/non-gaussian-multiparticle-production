@@ -1,15 +1,16 @@
-OS: Linux-6.18.57-x86_64-with-glibc2.41
-Kernel: 6.18.57
+OS: Debian GNU/Linux 13 (trixie)
+Kernel: Linux 6.18.57-x86_64
 Architecture: x86_64
-Processor: 
-CPU count: 5
-Python: 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+CPU: Intel Xeon Platinum 8573C
+Visible CPU count: 5
+Virtualization: KVM
+Python: 3.13.5 (GCC 14.2.0)
 NumPy: 2.3.5
 SciPy: 1.17.0
+Integrator: SciPy solve_ivp DOP853
 BLAS threads: OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1
-Integrator: DOP853
-rtol=2e-9, atol=2e-11, max_step=0.02
-Finite-volume parameters: m=1, L=20, Kcut=1, lambda0=0.1, T=1
-Fock cutoff: Nmax=8 baseline; Nmax=10 refinement
-Time stencil: h=0.003125 baseline; h=0.0015625 refinement
-Spatial stencil: a=0.1; spectral derivative used for primary SD residual
+Tolerances: rtol=2e-9, atol=2e-11, max_step=0.02
+Model parameters: m=1, L=20, Kcut=1, lambda0=0.1, T=1
+Fock cutoffs: Nmax=8 baseline, Nmax=10 refinement
+Time stencils: h=0.003125 baseline, h=0.0015625 refinement
+Spatial displacement cross-check: a=0.1; spectral derivative used in primary residual
