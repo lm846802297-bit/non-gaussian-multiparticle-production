@@ -1,0 +1,201 @@
+{
+  "all_ctp_configuration_A": {
+    "Nmax10": {
+      "max_F4c_complement_conjugation_error": 0.0,
+      "max_SD_relative_residual": 6.089353771450028e-06,
+      "max_largest_time_F4c_residual": 3.219770143779198e-17,
+      "max_residual_complement_conjugation_error": 0.0,
+      "max_residual_largest_time_branch_difference": 4.175350325421964e-12,
+      "min_SD_relative_residual": 1.6102992268316494e-06,
+      "number_of_components": 16
+    },
+    "Nmax8": {
+      "max_F4c_complement_conjugation_error": 0.0,
+      "max_SD_relative_residual": 6.127119363488578e-06,
+      "max_largest_time_F4c_residual": 3.778642895572816e-17,
+      "max_residual_complement_conjugation_error": 0.0,
+      "max_residual_largest_time_branch_difference": 4.050689153294886e-12,
+      "min_SD_relative_residual": 1.6464829862793114e-06,
+      "number_of_components": 16
+    }
+  },
+  "all_ctp_configuration_C": {
+    "max_F4c_complement_conjugation_error": 0.0,
+    "max_SD_relative_residual": 6.296612037798927e-06,
+    "max_largest_time_F4c_residual": 3.6286936382355203e-17,
+    "max_residual_complement_conjugation_error": 0.0,
+    "max_residual_largest_time_branch_difference": 5.1239549710984066e-12,
+    "min_SD_relative_residual": 2.078017841276209e-06,
+    "number_of_components": 16
+  },
+  "free_vacuum": {
+    "checks": {
+      "max_F4c_complement_conjugation_error": 0.0,
+      "max_SD_relative_residual": 1.0,
+      "max_largest_time_F4c_residual": 1.3610948155422255e-17,
+      "max_residual_complement_conjugation_error": 0.0,
+      "max_residual_largest_time_branch_difference": 3.427250307062112e-12,
+      "min_SD_relative_residual": 1.0,
+      "number_of_components": 16
+    },
+    "max_abs_F4c": 1.666147490140628e-17,
+    "max_abs_SD_residual": 2.8161248848204202e-12
+  },
+  "kcut_scan": [
+    {
+      "F4c": [
+        3.6025117362229603e-06,
+        1.4763629021977837e-05
+      ],
+      "K": 1,
+      "M33": [
+        -0.0007359671157709346,
+        0.0010894685539474887
+      ],
+      "Nmax": 5,
+      "abs_F4c": 1.5196803371374206e-05,
+      "abs_M33": 0.0013147582764662942,
+      "abs_source": 0.0013152795387940805,
+      "basis_dimension": 56,
+      "relative_SD_residual": 2.0417269900722514e-05,
+      "source": [
+        -0.0007368122494631633,
+        0.001089526490825901
+      ]
+    },
+    {
+      "F4c": [
+        3.600847356488232e-06,
+        1.4752418518905117e-05
+      ],
+      "K": 1,
+      "M33": [
+        -0.0007359779293961869,
+        0.0010894708046572724
+      ],
+      "Nmax": 6,
+      "abs_F4c": 1.5185517898368265e-05,
+      "abs_M33": 0.0013147661947125289,
+      "abs_source": 0.0013152874536825963,
+      "basis_dimension": 84,
+      "relative_SD_residual": 2.439454219473332e-05,
+      "source": [
+        -0.0007368230601791706,
+        0.0010895287347303193
+      ]
+    },
+    {
+      "F4c": [
+        1.2330221486925655e-05,
+        3.538302557851494e-05
+      ],
+      "K": 2,
+      "M33": [
+        -0.0014435902462870394,
+        0.002998885234598899
+      ],
+      "Nmax": 4,
+      "abs_F4c": 3.746989272744834e-05,
+      "abs_M33": 0.0033282526120278744,
+      "abs_source": 0.003329272467908581,
+      "basis_dimension": 126,
+      "relative_SD_residual": 0.0013664365735676762,
+      "source": [
+        -0.001445694302986304,
+        0.0029990036925430816
+      ]
+    },
+    {
+      "F4c": [
+        1.2280581790928731e-05,
+        3.53574348959506e-05
+      ],
+      "K": 2,
+      "M33": [
+        -0.0014461544088196117,
+        0.0029985424475413172
+      ],
+      "Nmax": 5,
+      "abs_F4c": 3.742941211861436e-05,
+      "abs_M33": 0.0033290568309741237,
+      "abs_source": 0.0033300707184492923,
+      "basis_dimension": 252,
+      "relative_SD_residual": 1.774739165703842e-05,
+      "source": [
+        -0.0014482488071411682,
+        0.0029986574299988938
+      ]
+    },
+    {
+      "F4c": [
+        1.2272766467532475e-05,
+        3.531787337761848e-05
+      ],
+      "K": 2,
+      "M33": [
+        -0.001446208035468136,
+        0.0029985622721123858
+      ],
+      "Nmax": 6,
+      "abs_F4c": 3.7389476817469396e-05,
+      "abs_M33": 0.0033290979831762835,
+      "abs_source": 0.003330111846755725,
+      "basis_dimension": 462,
+      "relative_SD_residual": 2.6129609266457693e-05,
+      "source": [
+        -0.001448302418376533,
+        0.0029986772111762067
+      ]
+    },
+    {
+      "F4c": [
+        1.4454319000269025e-05,
+        4.259691564452092e-05
+      ],
+      "K": 3,
+      "M33": [
+        -0.0015573347821983073,
+        0.0034703024160740686
+      ],
+      "Nmax": 4,
+      "abs_F4c": 4.4982491707196136e-05,
+      "abs_M33": 0.0038037206105146796,
+      "abs_source": 0.0038022036180645692,
+      "basis_dimension": 330,
+      "relative_SD_residual": 0.0018429230746400914,
+      "source": [
+        -0.0015586311901458051,
+        0.0034680572611085836
+      ]
+    },
+    {
+      "F4c": [
+        1.4352330334280574e-05,
+        4.2551686106628156e-05
+      ],
+      "K": 3,
+      "M33": [
+        -0.0015613330632554417,
+        0.0034706116600304784
+      ],
+      "Nmax": 5,
+      "abs_F4c": 4.490696356403227e-05,
+      "abs_M33": 0.003805641368961891,
+      "abs_source": 0.0038041237408472234,
+      "basis_dimension": 792,
+      "relative_SD_residual": 1.2934362427719816e-05,
+      "source": [
+        -0.0015626178682961918,
+        0.0034683689009906283
+      ]
+    }
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4; finite volume L=20",
+  "run_id": "phase6-ctp-sd-001",
+  "scope": "All 16 CTP branch assignments at K=1 for two noncoincident configurations; all-forward K=1,2,3 scan at selected Fock cutoffs; no continuum extrapolation.",
+  "tests": {
+    "count": 20,
+    "status": "passed"
+  },
+  "units": "hbar=c=1"
+}

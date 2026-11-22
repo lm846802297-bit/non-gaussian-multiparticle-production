@@ -1,0 +1,94 @@
+{
+  "CTP_convention": "+ branch chronological ket; - branch anti-chronological bra; event 0 is latest physical-time insertion",
+  "CTP_results": {
+    "configuration_A_max_Fock_change_F4c": 1.5514480700283496e-08,
+    "configuration_A_max_Fock_change_M33": 1.666541703576734e-09,
+    "configuration_A_max_Fock_change_source": 1.655508772641496e-09,
+    "configuration_A_max_complement_conjugation_error": 0.0,
+    "configuration_A_max_largest_time_F4c_error": 3.778642895572816e-17,
+    "configuration_A_max_relative_residual_N10": 6.089353771450028e-06,
+    "configuration_A_max_relative_residual_N8": 6.127119363488578e-06,
+    "configuration_C_max_relative_residual_N8": 6.296612037798927e-06
+  },
+  "Kcut_scan": "See summary.json and raw Kx-Ny.json files; matched Nmax=5 values show significant K dependence, so no continuum convergence claim.",
+  "events_A": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.5,
+      1.0
+    ],
+    [
+      -0.5,
+      2.0
+    ],
+    [
+      -1.0,
+      3.0
+    ]
+  ],
+  "events_C": [
+    [
+      1.2,
+      0.0
+    ],
+    [
+      0.4,
+      0.7
+    ],
+    [
+      -0.3,
+      1.7
+    ],
+    [
+      -1.1,
+      3.2
+    ]
+  ],
+  "limitations": [
+    "All 16 CTP components tested at K=1 for two selected noncoincident configurations only.",
+    "K=2 and K=3 scan is all-forward only.",
+    "K=3 Nmax=6 not yet available; K-cut convergence is not established.",
+    "No continuum or infinite-volume extrapolation.",
+    "No 2PI/4PI closure comparison in this phase."
+  ],
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4",
+  "parameters": {
+    "DOP853_atol": 2e-11,
+    "DOP853_rtol": 2e-09,
+    "Kcut_CTP": 1,
+    "L": 20.0,
+    "Nmax_CTP": [
+      8,
+      10
+    ],
+    "T": 1.0,
+    "lambda0": 0.1,
+    "m": 1.0,
+    "max_step": 0.02,
+    "time_stencil_h": [
+      0.003125,
+      0.0015625
+    ]
+  },
+  "run_id": "phase6-ctp-sd-001",
+  "runtime": {
+    "cpu_count": 5,
+    "cpu_model": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "machine": "x86_64",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "processor": "",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "scipy": "1.17.0"
+  },
+  "source_sha256": "bb7251f8ce111aec69d5ca4b8e5a5063d43296ea36b36c2240b99c4c7e9f489a",
+  "test_sha256": "bced0a5b809f6f32ed42e11e87513bf558e6e93ff885a3f0e1f17ebd85f24062",
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -v",
+    "count": 20,
+    "status": "passed"
+  }
+}

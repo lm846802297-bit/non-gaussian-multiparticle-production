@@ -1,0 +1,25 @@
+test_all_16_components_have_small_sd_residual (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_16_components_have_small_sd_residual) ... ok
+test_all_branch_fock_cutoff_convergence (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_branch_fock_cutoff_convergence) ... ok
+test_all_forward_matches_independent_time_ordered_engine (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_all_forward_matches_independent_time_ordered_engine) ... ok
+test_complement_branch_conjugation (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_complement_branch_conjugation) ... ok
+test_ctp_largest_time_identity (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_ctp_largest_time_identity) ... ok
+test_free_vacuum_connected_four_point (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_free_vacuum_connected_four_point) ... ok
+test_kcut_scan_results_are_archived_and_finite (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_kcut_scan_results_are_archived_and_finite) ... ok
+test_second_spacetime_configuration (test_ctp_sd_all_branches.CTPAllBranchSDTests.test_second_spacetime_configuration) ... ok
+test_independent_fock_cutoff_check_for_reordered_case (test_multiconfig_results.MultiConfigurationSDTests.test_independent_fock_cutoff_check_for_reordered_case) ... ok
+test_norm_and_hermiticity (test_multiconfig_results.MultiConfigurationSDTests.test_norm_and_hermiticity) ... ok
+test_second_order_time_stencil_scaling (test_multiconfig_results.MultiConfigurationSDTests.test_second_order_time_stencil_scaling) ... ok
+test_spatial_finite_difference_crosscheck (test_multiconfig_results.MultiConfigurationSDTests.test_spatial_finite_difference_crosscheck) ... ok
+test_standalone_reproduction_matches_aggregate_exactly (test_multiconfig_results.MultiConfigurationSDTests.test_standalone_reproduction_matches_aggregate_exactly) ... ok
+test_three_noncoincident_configurations_recorded (test_multiconfig_results.MultiConfigurationSDTests.test_three_noncoincident_configurations_recorded) ... ok
+test_fock_cutoff_convergence_of_source_and_four_point (test_sd_residual.SDResidualTests.test_fock_cutoff_convergence_of_source_and_four_point) ... ok
+test_free_vacuum_connected_four_point_and_sd_residual (test_sd_residual.SDResidualTests.test_free_vacuum_connected_four_point_and_sd_residual) ... ok
+test_normal_ordered_cubic_matches_fourier_projected_phi_cube_minus_tadpole (test_sd_residual.SDResidualTests.test_normal_ordered_cubic_matches_fourier_projected_phi_cube_minus_tadpole) ... ok
+test_projected_cubic_matches_hamiltonian_commutator_away_from_fock_boundary (test_sd_residual.SDResidualTests.test_projected_cubic_matches_hamiltonian_commutator_away_from_fock_boundary) ... ok
+test_sd_residual_converges_with_time_stencil (test_sd_residual.SDResidualTests.test_sd_residual_converges_with_time_stencil) ... ok
+test_spatial_stencil_scan_is_stable (test_sd_residual.SDResidualTests.test_spatial_stencil_scan_is_stable) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.030s
+
+OK
