@@ -1,11 +1,10 @@
 
-## 2026-11-22 — Phase IV: six-field source and Schwinger-Dyson residual
+## 2026-11-22 — Phase IV multi-configuration SD validation
 
-- Implemented the projected normal-ordered cubic composite operator P_K :phi_K^3:_m, matching the finite-mode Hamiltonian rather than using an unprojected pointwise cube.
-- Clarified that S_4,c is the fourth cumulant with the composite A_1=:phi_1^3:_m treated as one argument; it is not the elementary connected six-field cumulant. In a Gaussian vacuum M33 can be nonzero (3! F12 F13 F14) while M31 vanishes.
-- Computed M33=<T P_K:phi_1^3:_m phi_2 phi_3 phi_4> and the three M31(1;j) F2 terms for a noncoincident all-forward configuration.
-- Evaluated the time derivative by centered finite differences and the spatial derivative spectrally; independently compared spatial finite differences at a=0.05, 0.1, 0.2.
-- At Nmax=8, h=0.00625, the relative SD residual is 2.43384e-5; at h=0.003125 it is 6.12712e-6, consistent with O(h^2). A fit versus h^2 gives a zero-step residual intercept magnitude 8.86e-13.
-- Nmax=8 to 10 changes F4c, M33, and the connected source by 2.96e-9, 6.66e-10, and 6.58e-10 respectively.
-- Independently checked the projected cubic operator against the Hamiltonian commutator and against Fourier-projected phi^3 - 3 Delta_m(0) phi.
-- Six Phase-IV tests pass. The result covers one noncoincident all-forward configuration at Kcut=1; no continuum extrapolation is claimed.
+- Repeated the direct projected six-field-source calculation at four noncoincident all-forward spacetime configurations, holding m=1, L=20, Kcut=1, lambda0=0.1, T=1, Nmax=8 fixed.
+- Relative SD residuals: A reference 6.12712e-6; B common spatial translation 6.13134e-6; C changed times/separations 6.10741e-6; D earlier pulse region 5.37600e-6.
+- A common spatial translation by 2.3 leaves F4c, M33, and the connected composite source invariant to relative differences below 2.1e-13.
+- Halving the time stencil from 0.003125 to 0.0015625 reduces the reference residual to 1.89285e-6.
+- Increasing Nmax from 8 to 10 changes the reference F4c, M33, and connected source by less than 3e-9 relative.
+- Five dedicated tests pass. The test suite checks residuals across configurations, translation invariance, time-step refinement, Fock-cutoff refinement, and cancellation of the two SD equation terms.
+- The result remains Kcut=1 and all-forward only; no continuum or all-contour source validation is claimed.

@@ -4,44 +4,37 @@ Last updated: 2026-11-22
 
 ## Current phase
 
-Phase IV: direct six-field composite source and numerical validation of the connected four-point Schwinger-Dyson equation in the finite-volume 1+1D normal-ordered time-dependent lambda(t) phi^4 model.
+Phase IV: multi-configuration validation of the connected four-point Schwinger-Dyson equation in the finite-volume 1+1D normal-ordered time-dependent lambda(t) phi^4 model.
 
 ## Completed
 
 - Phase I: lowest-order Keldysh cut derivation and finite-volume perturbative benchmark.
 - Phase II: exact two- and connected four-point Schwinger-Dyson hierarchy; finite-volume all-orders-in-projected-Hamiltonian dynamics; selected equal-time and unequal-time correlators.
 - Phase III: all 16 CTP branch assignments for four selected spacetime configurations; Fock-cutoff convergence and CTP identities.
-- Phase IV: direct evaluation of the projected normal-ordered six-field source M33, the three M31*F2 subtraction terms, and the connected four-point Schwinger-Dyson residual for one noncoincident all-forward configuration.
+- Phase IV: projected normal-ordered six-field composite source and connected four-point SD residual for one reference configuration.
+- Phase IV extension: repeated the all-forward SD residual at four noncoincident spacetime configurations, checked spatial translation invariance, and refined time stencil and Fock cutoff.
 
-## Phase III quantitative validation
+## Phase IV multi-configuration results
 
-- Four configurations x 16 branch assignments = 64 connected complex components.
-- Maximum relative Nmax=12 to Nmax=16 change: 4.60e-12.
-- Maximum largest-time identity residual: 4.62e-17 absolute.
-- Complement-conjugation residual: zero at stored floating-point precision.
-- Independent all-forward comparison with the previous time-ordered implementation: relative difference below 4.31e-13.
-- Six Phase-III automated tests pass.
+Parameters: m=1, L=20, Kcut=1, lambda0=0.1, T=1, Nmax=8, h=0.003125, a=0.1; DOP853 with rtol=2e-9 and atol=2e-11.
 
-## Phase IV quantitative validation
-
-- Model parameters: m=1, L=20, Kcut=1, lambda0=0.1, T=1; event times are noncoincident and event 1 is latest.
-- The source S_4,c is the fourth cumulant with A_1=:phi_1^3:_m treated as one composite argument and phi_2, phi_3, phi_4 as the other arguments. It is not the elementary connected six-field cumulant.
-- The projected normal-ordered cubic operator matches both the Hamiltonian commutator and Fourier-projected phi^3 - 3 Delta_m(0) phi.
-- At Nmax=8, h=0.00625, the relative Schwinger-Dyson residual is 2.43384e-5.
-- Halving the time stencil twice gives 6.12712e-6; the residual follows the expected second-order stencil scaling.
-- Richardson fit of the complex residual versus h^2 gives a zero-step intercept magnitude 8.86e-13.
-- Nmax=8 to 10 relative changes: F4c 2.96e-9, M33 6.66e-10, connected source 6.58e-10.
-- Spatial finite-difference derivatives agree with the spectral derivative within 2.06e-5 to 3.29e-4 over a=0.05 to 0.2.
-- Six Phase-IV automated tests pass; free-vacuum absolute SD residual is 2.30e-15.
+- A reference: relative SD residual 6.12712e-6.
+- B spatially translated by 2.3: 6.13134e-6.
+- C changed time separations: 6.10741e-6.
+- D earlier pulse region: 5.37600e-6.
+- Translation invariance: relative differences in F4c, M33, and connected source below 2.1e-13.
+- Halving h from 0.003125 to 0.0015625 reduces the reference residual to 1.89285e-6.
+- Increasing Nmax from 8 to 10 changes F4c, M33, and source by less than 3e-9 relative.
+- Five multi-configuration tests pass.
 
 ## Remaining work
 
-- Repeat the six-field source and SD-residual test for additional spacetime configurations and contour assignments.
-- Increase momentum-mode cutoff and assess Kcut convergence; current Phase-III/IV calculations use Kcut=1.
+- Repeat the six-field source and SD-residual test for additional CTP contour assignments.
+- Increase momentum-mode cutoff and assess Kcut convergence; current Phase-IV calculations use Kcut=1.
 - Extend from selected configurations to a structured four-coordinate spacetime grid.
 - Derive and compare controlled six-point closures (2PI/Bethe-Salpeter versus 4PI) against the finite-Hilbert reference.
 - Complete continuum and infinite-volume extrapolations before making continuum-QFT claims.
 
 ## Scientific status
 
-The Phase-IV result is a successful numerical check of one noncoincident all-forward connected four-point equation in a finite-volume, finite-mode Hamiltonian model. It is not a continuum or infinite-volume result. The exact hierarchy has not yet been closed or solved over the full spacetime domain. No final novelty claim is made.
+The all-forward connected four-point SD equation has passed numerical consistency checks at four noncoincident configurations in a finite-volume, finite-mode Hamiltonian model. This does not yet establish the full CTP hierarchy or continuum limit. No final novelty claim is made.

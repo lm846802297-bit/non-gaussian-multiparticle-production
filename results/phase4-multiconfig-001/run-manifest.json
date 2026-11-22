@@ -1,0 +1,135 @@
+{
+  "configurations": {
+    "A_reference": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.5,
+        1.0
+      ],
+      [
+        -0.5,
+        2.0
+      ],
+      [
+        -1.0,
+        3.0
+      ]
+    ],
+    "B_spatial_translation": [
+      [
+        1.0,
+        2.3
+      ],
+      [
+        0.5,
+        3.3
+      ],
+      [
+        -0.5,
+        4.3
+      ],
+      [
+        -1.0,
+        5.3
+      ]
+    ],
+    "C_changed_separations_times": [
+      [
+        1.2,
+        0.0
+      ],
+      [
+        0.4,
+        0.7
+      ],
+      [
+        -0.3,
+        1.7
+      ],
+      [
+        -1.1,
+        3.2
+      ]
+    ],
+    "D_early_pulse_side": [
+      [
+        0.4,
+        0.0
+      ],
+      [
+        -0.1,
+        0.6
+      ],
+      [
+        -0.8,
+        1.4
+      ],
+      [
+        -1.5,
+        2.1
+      ]
+    ]
+  },
+  "model": "1+1D normal-ordered real scalar lambda(t) phi^4, finite volume and finite momentum projection",
+  "objective": "Repeat connected four-point Schwinger-Dyson residual at multiple noncoincident all-forward spacetime configurations",
+  "parameters": {
+    "Kcut": 1,
+    "L": 20.0,
+    "Nmax_baseline": 8,
+    "Nmax_refinement": 10,
+    "T": 1.0,
+    "a": 0.1,
+    "atol": 2e-11,
+    "h_baseline": 0.003125,
+    "h_refinement": 0.0015625,
+    "integrator": "DOP853",
+    "lambda0": 0.1,
+    "m": 1.0,
+    "max_step": 0.02,
+    "rtol": 2e-09
+  },
+  "refinements": {
+    "Nmax10_residual": 6.047453378767839e-06,
+    "h_half_residual": 1.8928453265759437e-06
+  },
+  "results": {
+    "A_reference": 6.127119363523455e-06,
+    "B_spatial_translation": 6.131335033237754e-06,
+    "C_changed_separations_times": 6.107408741754343e-06,
+    "D_early_pulse_side": 5.376003865367853e-06
+  },
+  "run_id": "phase4-multiconfig-001",
+  "runtime": {
+    "architecture": "x86_64",
+    "cpu_count": 5,
+    "kernel": "6.18.57",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "processor": "",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "scope_limitations": [
+    "Kcut=1 only; momentum-mode convergence is not established",
+    "Finite volume L=20; no infinite-volume extrapolation",
+    "All-forward noncoincident configurations only",
+    "Does not validate all CTP contour components of the six-field source",
+    "Does not compare 2PI/4PI closures"
+  ],
+  "sha256": {
+    "provenance/phase4-multiconfig-environment.txt": "3ffdc5b8c96df062eba3753ce5f9c27b475ae10d56d42ffedb0ca632265b428a",
+    "results/phase4-multiconfig-001/A_N10_h0p003125.json": "660ba18ff937ca97c49d131b995dfd8777263c953381db5986f92f3b4229dc3b",
+    "results/phase4-multiconfig-001/A_N8_h0p0015625.json": "7f9482ac09e806f4f9b0971ca99a3f395d243562598eff552cf845fc5fef8f35",
+    "results/phase4-multiconfig-001/A_reference.json": "26fb680158b18d8699d78b50e46db4d17ac714e64261863696c735cd54c9b4d7",
+    "results/phase4-multiconfig-001/B_spatial_translation.json": "97b5dffbb3776cd2661ec55b6e291da31032614fb5b1ca0afbf6e633b5a04bfc",
+    "results/phase4-multiconfig-001/C_changed_separations_times.json": "e1bfc63e91c1cd18ff4e1ba14114144dd9adb871bf63987da89a57768eb483d7",
+    "results/phase4-multiconfig-001/D_early_pulse_side.json": "75863c6a22b41e4ad89c085133a5b449eba0db4236c6f07ea3c963af4f32369b",
+    "results/phase4-multiconfig-001/summary.json": "4b54a8c76892a5e634eac26669d88a7b9f8bd452357bc9bec9fef40a79970515",
+    "src/run_multiconfig_sd.py": "cb56034111ebca1ddaa405ee089af210c1098e89c76e7da34f7aa4db3c9076d5",
+    "src/sd_residual.py": "dc338ca5b07d50cd1328f02d44eab4be9f0c5966b919ecae1fd8769c4faa0eda",
+    "tests/test_multiconfig_sd.py": "ef5a278bfba37309dc79a7a4184dc0ceedeb9dfb0621cc376b4823772ec1d186"
+  },
+  "status": "completed",
+  "validation": "5 automated tests pass; spatial-translation invariance of F4c/M33/source; time-stencil refinement; Fock-cutoff refinement; source/derivative cancellation"
+}
