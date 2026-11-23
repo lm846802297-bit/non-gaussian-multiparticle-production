@@ -1,0 +1,33 @@
+lock_version: 1
+
+central_repository: lm846802297-bit/high-energy-theory-research
+standards_release: null
+source_commit: "142267bc803c90aa681110293b66b73947bbcaa1"
+
+adopted_at: "2026-11-23"
+adoption_pr: "PENDING_PR_URL"
+
+adopted_profiles:
+  - core-governance
+  - research-compute
+  - task-handoff
+  - scientific-diff
+  - research-quality-gate
+  - calculation-result-archive
+  - rcrps-v1.0.1
+  - git-review-and-merge
+  - document-review
+
+local_extensions:
+  - path: "AGENTS.md"
+    scope: "Non-equilibrium scalar-field theory, CTP/Wightman/operator-ordering conventions, finite-volume normalization, out-mode projection, and connected multiparticle cumulants"
+  - path: "theory/"
+    scope: "Project-specific Lagrangian, regulator/renormalization choices, out-state observables, perturbative benchmarks, and derivations"
+  - path: "research/"
+    scope: "Project charter, literature audit, novelty assessment, and scientific decision records"
+  - path: "provenance/README.md"
+    scope: "Project-specific immutable run bundles, native quantum-field numerical outputs, and environment/input fingerprints"
+  - path: "src/ and tests/"
+    scope: "Finite-volume Hamiltonian/CTP implementations, physics-specific regression tests, analytic limits, and independent checks"
+
+deviations: []
