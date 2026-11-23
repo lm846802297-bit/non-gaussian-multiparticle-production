@@ -1,0 +1,23 @@
+{
+  "K": 5,
+  "Nmax": 6,
+  "L": 20.0,
+  "m": 1.0,
+  "x": 0.0,
+  "dimension": 12376,
+  "base_commit": "eab1f5b3198d03eafc3f162299c9038956beaa0b",
+  "hamiltonian": {
+    "max_abs": 2.7755575615628914e-17,
+    "relative_frobenius": 2.362800278654992e-17,
+    "num_above_1e-14": 0
+  },
+  "cubic_vs_independent_wick": {
+    "max_abs": 1.6653345369377348e-16,
+    "relative_frobenius": 2.6041927644429105e-16,
+    "num_above_1e-14": 0
+  },
+  "source_sha256": {
+    "src/phase7_fast_ops.py": "0daf7573ae92d7f16db3f50ae6f6720c4ed399a870eaaa9b6a37c9a6307bb4c8",
+    "operator_bridge.py": "1c2c348494fd73e49df8870a57f7ed082995607e98467bf7d2249c71dbe82b9b"
+  }
+}

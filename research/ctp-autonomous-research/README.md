@@ -4,6 +4,10 @@ Baseline: Phase VII draft PR #8, commit
 `eab1f5b3198d03eafc3f162299c9038956beaa0b`.
 Results here are isolated on the research branch; no change is made to main.
 
+## Current acceptance gate
+
+[Adopted Phase VII baseline and K=5 N=6 acceptance record](stage-01-k5-fock/phase7-reconciled/RECONCILIATION.md) governs the active work. Higher-cutoff and closure entries below are preserved prior results, not authorization to bypass the current gate.
+
 ## Published stages
 
 1. [K=5 finite-Fock/time-derivative audit](stage-01-k5-fock/README.md)
