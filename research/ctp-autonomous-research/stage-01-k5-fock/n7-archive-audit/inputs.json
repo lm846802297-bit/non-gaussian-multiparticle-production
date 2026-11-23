@@ -1,0 +1,42 @@
+{
+  "n7": {
+    "path": "research/ctp-autonomous-research/stage-01-k5-fock/results/k5-n7.json",
+    "sha": "67db2603f65fdc0fdb3cc3be922a0a6e06cf5c35",
+    "size": 37872
+  },
+  "n6": {
+    "path": "research/ctp-autonomous-research/stage-01-k5-fock/results/k5-n6-segmented.json",
+    "sha": "53032e0885986ca2fdb9caf2db3e28f88498445a",
+    "size": 37779
+  },
+  "cf": {
+    "path": "research/ctp-autonomous-research/stage-02-ctp-regulators/cf4/cf4_k5_n7_A.json",
+    "sha": "b24b59bedf75bc71421f5b3a5fc7c62dfb24b60a",
+    "size": 6680
+  },
+  "wick": {
+    "path": "research/ctp-autonomous-research/stage-01-k5-fock/results/independent_source_K5N7.json",
+    "sha": "2eedec0a81fc743c141a72db15b14a43f9ab75ba",
+    "size": 1363
+  },
+  "n7runner": {
+    "path": "research/ctp-autonomous-research/stage-01-k5-fock/scripts/scan_segmented.py",
+    "sha": "da224ceab099520510ffc66bee516cfd814b3fdc",
+    "size": 3883
+  },
+  "cfrunner": {
+    "path": "research/ctp-autonomous-research/stage-02-ctp-regulators/cf4/cf4.py",
+    "sha": "c1457cb6303b85109a57ca01d7b3c2e83825f7b8",
+    "size": 7424
+  },
+  "ops": {
+    "path": "src/sd_residual.py",
+    "sha": "29139f6f8a35d3d874c401d240318ed2c8cadc40",
+    "size": 13475
+  },
+  "wickrunner": {
+    "path": "research/ctp-autonomous-research/stage-01-k5-fock/scripts/independent_source.py",
+    "sha": "822ebdd7e7b27af93afa9f6f39e402b7f57046d3",
+    "size": 3620
+  }
+}
