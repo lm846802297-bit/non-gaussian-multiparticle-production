@@ -1,0 +1,6 @@
+[49.97s] Hamiltonian/projected cubic built; independent paths started
+[58.02s] 4/16 signed assignments
+[59.73s] 8/16 signed assignments
+[59.73s] 12/16 signed assignments
+[59.73s] 16/16 signed assignments
+{'segments': 61, 'RHS': 9437, 'complete_unique_paths': 34, 'exact_reuse_of_complete_paths': 318} 59.737482292000095

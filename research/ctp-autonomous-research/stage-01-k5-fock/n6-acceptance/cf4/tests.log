@@ -1,0 +1,8 @@
+test_all_branches_small_exact_dop853 (test_gate_cf4.TestCF4.test_all_branches_small_exact_dop853) ... ok
+test_cheb_and_cf4_order (test_gate_cf4.TestCF4.test_cheb_and_cf4_order) ... ok
+test_zero_pulse_exact_free_four_field (test_gate_cf4.TestCF4.test_zero_pulse_exact_free_four_field) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.231s
+
+OK

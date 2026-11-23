@@ -1,0 +1,8 @@
+test_against_shared_archive_at_small_K (test_direct.Direct.test_against_shared_archive_at_small_K) ... ok
+test_free_gaussian (test_direct.Direct.test_free_gaussian) ... ok
+test_free_projected_wick_oracle (test_direct.Direct.test_free_projected_wick_oracle) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.484s
+
+OK

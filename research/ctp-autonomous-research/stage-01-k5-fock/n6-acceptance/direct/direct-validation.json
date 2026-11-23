@@ -1,0 +1,70 @@
+{
+  "archived": {
+    "F4c": {
+      "max_abs": 7.029912040668097e-17,
+      "max_rel": 1.6391177635740893e-12
+    },
+    "M33": {
+      "max_abs": 5.637851296924623e-18,
+      "max_rel": 1.330373287272009e-15
+    },
+    "connected_composite_source": {
+      "max_abs": 6.667843360785852e-18,
+      "max_rel": 1.813387632136136e-15
+    }
+  },
+  "archived_sha256": "4dcda07173508391dd173644ae79f2e4174d19abb79a346ac76dd3bf4679411b",
+  "branch_symmetries": {
+    "01": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 2.466597174340982e-20
+    },
+    "02": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 2.5184100050252478e-20
+    },
+    "03": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 6.776263578034403e-21
+    },
+    "12": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 6.546139416680338e-17
+    },
+    "13": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 7.076311083754595e-17
+    },
+    "23": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 0.0
+    },
+    "F4c": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 2.883244014823445e-17
+    },
+    "M33": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 8.375768792001969e-18
+    },
+    "connected_composite_source": {
+      "max_conjugation_abs": 0.0,
+      "max_latest_time_abs": 8.375768792001969e-18
+    }
+  },
+  "checked_ctp_labels": 16,
+  "checked_raw_moments_per_label": 7,
+  "counts": {
+    "RHS": 9437,
+    "complete_unique_paths": 34,
+    "exact_reuse_of_complete_paths": 318,
+    "segments": 61
+  },
+  "native_sha256": "8caf8bffb2c0b903316eb087e4dd1db9d9efee72bc74cf60dfd21dc3d89c0dfe",
+  "operator_sha256": "07271361d953af17b2973ee3fd26b6dd637ae84da401b9bcea92a0e4dc8c4bef",
+  "reconstruction": {
+    "F4_reconstruction": 0.0,
+    "raw_product_reconstruction": 0.0,
+    "source_reconstruction": 0.0
+  }
+}

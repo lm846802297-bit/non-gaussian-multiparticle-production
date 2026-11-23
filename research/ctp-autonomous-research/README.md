@@ -8,6 +8,8 @@ Results here are isolated on the research branch; no change is made to main.
 
 [Adopted Phase VII baseline and K=5 N=6 acceptance record](stage-01-k5-fock/phase7-reconciled/RECONCILIATION.md) governs the active work. Higher-cutoff and closure entries below are preserved prior results, not authorization to bypass the current gate.
 
+[Integrated K=5 N=6 configuration A acceptance](stage-01-k5-fock/n6-acceptance/README.md) has passed the fixed-cutoff numerical gate (CF4 refinement, independent 16×7 signed moments, and central single-vector bridge). This does not assert Fock convergence or authorize a higher-cutoff/closure claim.
+
 ## Published stages
 
 1. [K=5 finite-Fock/time-derivative audit](stage-01-k5-fock/README.md)

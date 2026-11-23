@@ -1,0 +1,5 @@
+Signed identity, provenance, and reconciliation complete; numeric gates pass=True.
+CF4_fine_vs_DOP ('F4c', 3.418643662005872e-08) ('connected_composite_source', 3.399871168432064e-10)
+CF4_fine_vs_independent_direct ('F4c', 3.418679731102046e-08) ('connected_composite_source', 3.3998874366005806e-10)
+independent_direct_vs_DOP ('F4c', 1.6391177635740893e-12) ('connected_composite_source', 1.813387632136136e-15)
+CF4_last_refinement ('F4c', 4.955121725551934e-07) ('connected_composite_source', 5.542458401576612e-09)

@@ -1,0 +1,16 @@
+test_complete_direct_and_dop (test_gate_audit.NativeTests.test_complete_direct_and_dop) ... ok
+test_config_and_float_failure (test_gate_audit.NativeTests.test_config_and_float_failure) ... ok
+test_no_nan_duplicate (test_gate_audit.NativeTests.test_no_nan_duplicate) ... ok
+test_nonfinite_or_bool_component (test_gate_audit.NativeTests.test_nonfinite_or_bool_component) ... ok
+test_provenance_mismatch (test_gate_audit.NativeTests.test_provenance_mismatch) ... ok
+test_raw_moment_missing_or_inconsistent (test_gate_audit.NativeTests.test_raw_moment_missing_or_inconsistent) ... ok
+test_stencil_h_lock (test_gate_audit.NativeTests.test_stencil_h_lock) ... ok
+test_stencil_raw_perturbation_detected (test_gate_audit.NativeTests.test_stencil_raw_perturbation_detected) ... ok
+test_symmetry_signed_flip_corruption (test_gate_audit.NativeTests.test_symmetry_signed_flip_corruption) ... ok
+test_threshold_is_strict_and_undefined_fails (test_gate_audit.NativeTests.test_threshold_is_strict_and_undefined_fails) ... ok
+test_two_cf_dt_both_required (test_gate_audit.NativeTests.test_two_cf_dt_both_required) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.057s
+
+OK
