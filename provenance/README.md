@@ -22,6 +22,13 @@ Keep the following roles separate:
 
 The final run records must conform to central RCRPS v1.0.1, including all 14 fields in execution.source_control. The manifest records the actual checkout used by the calculation, not the later commit that archives its result.
 
+## 1.1 Historical run records
+
+Existing records created before adoption remain immutable historical records. In particular, the existing `run-manifest.json` files and the Phase-VII `summary.json`, `phase7-environment.txt`, and `phase7-source-manifest.txt` are legacy project records, not retroactive RCRPS v1.0.1 records. They do not contain the full central 14-field `execution.source_control` object and must not be rewritten or relabelled as v1.0.1.
+
+For new substantial runs after adoption, create the central RCRPS v1.0.1 `run_manifest.json`, `result_summary.json`, and `validation_report.json` alongside the existing project-specific progress and native-output records. Where useful, add an index or cross-reference from a new RCRPS record to an older run; do not mutate the old run bundle or fabricate missing source-control fields.
+
+
 ## 2. QFT-specific run metadata
 
 In addition to central RCRPS fields, record the parameters that define this project's calculation:
