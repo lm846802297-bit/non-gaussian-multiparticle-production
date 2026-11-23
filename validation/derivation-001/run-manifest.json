@@ -1,0 +1,35 @@
+{
+  "run_id": "derivation-001-vertex-combinatorics",
+  "status": "passed",
+  "purpose": "Independent combinatorial check of the normalized four-particle Fock-state factor for a normal-ordered quartic creation vertex",
+  "source_file": "validation/derivation-001/test_vertex_combinatorics.py",
+  "source_sha256": "c53722747e2d5bd5eea0937d0531fe5bd90fae3e48ba288d7d09e42ce416d97a",
+  "result_file": "validation/derivation-001/result.txt",
+  "result_sha256": "6d5b5f18b0499e4fe2ac93ec59e1c51b2aa1456c4516ff68cd3e015380659fa2",
+  "executed_source": "/tmp/test_vertex_combinatorics.py",
+  "command": "python /tmp/test_vertex_combinatorics.py",
+  "runtime": {
+    "python": "3.13.5 (GCC 14.2.0)",
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "kernel": "Linux 6.18.57-x86_64",
+    "architecture": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "visible_cpu_count": 5,
+    "virtualization": "KVM"
+  },
+  "parameters": {
+    "occupation_patterns": [
+      [0, 0, 0, 0],
+      [0, 0, 0, 1],
+      [0, 0, 1, 1],
+      [0, 1, 1, 2],
+      [0, 1, 2, 3]
+    ],
+    "tolerance": 1e-14
+  },
+  "limitations": [
+    "This checks only the Bose combinatorial factor in the vacuum-to-four-particle vertex matrix element.",
+    "It does not validate the Keldysh contour derivation, pulse integral, momentum sums, renormalization, or the full two-particle spectrum.",
+    "No physical simulation or numerical spectrum was computed."
+  ]
+}

@@ -1,0 +1,5 @@
+(0, 0, 0, 0) direct=0.204124145232 formula=0.204124145232 PASS
+(0, 0, 0, 1) direct=0.408248290464 formula=0.408248290464 PASS
+(0, 0, 1, 1) direct=0.5 formula=0.5 PASS
+(0, 1, 1, 2) direct=0.707106781187 formula=0.707106781187 PASS
+(0, 1, 2, 3) direct=1 formula=1 PASS
