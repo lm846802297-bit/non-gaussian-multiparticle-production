@@ -1,5 +1,7 @@
 # Non-Gaussian Multiparticle Production in Nonequilibrium Quantum Field Theory
 
+**Research governance:** This repository adopts the shared standards pinned in [research/standards-lock.yaml](research/standards-lock.yaml). See the [Central Research Standards Index](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/governance/CENTRAL_STANDARDS_INDEX.md). The project-specific QFT model, CTP conventions, out-mode observables, numerical methods, and physical validation remain local.
+
 Research archive for the study of dynamically generated connected four-point correlations in a time-dependent interacting quantum field theory and their contribution to outgoing two-particle spectra.
 
 **Repository name:** `non-gaussian-multiparticle-production`  
