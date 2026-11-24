@@ -51,6 +51,16 @@ Preserve native JSON/CSV tables, complex-valued correlator components, Fock-spac
 
 Record the source script, exact command, byte size, row/record count, units, and SHA-256 for each output. Preserve sufficient precision for independent recomputation. Do not use a figure or a prose summary as a substitute for its numerical source data.
 
+### 3.1 Three-tier storage selection
+
+Apply the central three-tier policy according to data role, size, access pattern, durability, licensing, and project budget. Do not migrate historical run bundles merely to normalize storage.
+
+- **Ordinary Git:** retain source code, theory notes, input definitions, run manifests, provenance, validation reports, and reasonably sized native CSV/JSON numerical outputs. Preserve exact native precision and immutable run directories.
+- **Git LFS:** consider prospectively for a large binary numerical artifact that must be versioned with the source and remains practical to retrieve with the project working set. Record the LFS object identity/OID, SHA-256, byte size, format, run ID, and referencing commit; verify the actual downloaded bytes.
+- **External object storage:** use for bulk raw simulation outputs or long-term datasets whose volume or access pattern makes Git/LFS unsuitable. Keep an immutable object/version identifier, exact URI, byte size, source run ID, SHA-256, retrieval instructions, and retention responsibility in a repository-side manifest.
+
+After upload, retrieve each LFS/external object and verify its exact bytes against the recorded SHA-256. Never rely on a temporary runtime workspace or expiring CI artifact as the sole permanent copy. Do not introduce LFS or external storage without a concrete need.
+
 ## 4. Validation and scientific status
 
 Validation should be selected according to the claim and may include:
