@@ -1,6 +1,6 @@
 # Research Repository Instructions
 
-The shared minimum requirements for research governance, compute execution, task handoff, scientific-change tracking, quality gates, result archival, structured records, document review, and Git integration are maintained by the central research infrastructure repository. The adopted revision is pinned in [research/standards-lock.yaml](research/standards-lock.yaml). Start from the [Central Research Standards Index](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/governance/CENTRAL_STANDARDS_INDEX.md).
+The shared minimum requirements for research governance, compute execution, task handoff, scientific-change tracking, quality gates, result archival, structured records, document review, and Git integration are maintained by the central research infrastructure repository. The adopted revision is pinned in [research/standards-lock.yaml](research/standards-lock.yaml). Start from the [Central Research Standards Index](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/governance/CENTRAL_STANDARDS_INDEX.md).
 
 The central standards define common research-process requirements. This repository remains authoritative for the physical model, field-theory conventions, finite-volume normalization, CTP/operator ordering, out-mode observables, numerical implementation, and project-specific scientific acceptance criteria.
 
@@ -10,8 +10,8 @@ Before substantial work:
 
 1. Read this file, the project README, STATUS.md, and research/standards-lock.yaml.
 2. Read the pinned Central Research Standards Index.
-3. For a new derivation, numerical run, parameter scan, implementation change, or multi-agent handoff, prepare a concise Research Task Brief using the [central Task Handoff Standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/RESEARCH_TASK_HANDOFF_STANDARD.md) and [template](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/templates/research-task-brief.md). Use the existing research/task-record layout; do not restructure the project solely to host a brief. Historical work does not need retroactive briefs.
-4. Select the task-appropriate [central Research Quality Gate](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/governance/RESEARCH_QUALITY_GATE.md) profile and define relevant acceptance checks before interpreting new results.
+3. For a new derivation, numerical run, parameter scan, implementation change, or multi-agent handoff, prepare a concise Research Task Brief using the [central Task Handoff Standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/RESEARCH_TASK_HANDOFF_STANDARD.md) and [template](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/templates/research-task-brief.md). Use the existing research/task-record layout; do not restructure the project solely to host a brief. Historical work does not need retroactive briefs.
+4. Select the task-appropriate [central Research Quality Gate](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/governance/RESEARCH_QUALITY_GATE.md) profile and define relevant acceptance checks before interpreting new results.
 5. Inspect existing source, run manifests, raw outputs, parent runs, and provenance before starting. Reuse verified prior results rather than repeating calculations without scientific need.
 
 
@@ -55,13 +55,13 @@ Preserve exact equations, signs, normalization factors, operator ordering, and h
 
 - Work on a named research branch; do not develop directly on main.
 - Open a focused PR for substantive research or governance changes.
-- Follow the pinned [central Git merge policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/governance/GIT_MERGE_POLICY.md). Substantive research defaults to Create a merge commit.
+- Follow the pinned [central Git merge policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/governance/GIT_MERGE_POLICY.md). Substantive research defaults to Create a merge commit.
 - Preserve raw inputs, native outputs, and historical results. New runs create new immutable result directories.
 - Record exact base/head SHAs and relevant acceptance checks in the PR.
 - After merge, verify the integrated main state and remote files separately from scientific validation.
 
 ## 5. Reporting
 
-Follow the central [Research Task Handoff Standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/RESEARCH_TASK_HANDOFF_STANDARD.md) and [Scientific Diff reporting standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/docs/scientific-diff-workflow.md#11-research-reporting-and-communication-standard).
+Follow the central [Research Task Handoff Standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/RESEARCH_TASK_HANDOFF_STANDARD.md) and [Scientific Diff reporting standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/scientific-diff-workflow.md#11-research-reporting-and-communication-standard).
 
 For this project, report the exact regulator, volume, Fock/momentum cutoffs, solver settings, source/input fingerprints, raw outputs, convergence data, and independent checks. Keep finite-volume/Fock-space results distinct from continuum or infinite-volume claims.
