@@ -1,9 +1,9 @@
 # Provenance and Archival Policy
 
 **Status:** Project-specific extension to the central Calculation-result Archival Policy.  
-**Central source commit:** 142267bc803c90aa681110293b66b73947bbcaa1
+**Central source commit:** 14155487afc075d301fa7f6cf452c7bff137e869
 
-The shared requirements for native-file archival, extract-before-upload, run provenance, checksums, remote verification, and separation of archival from scientific validation are defined by the [central Calculation-result Archival Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/CALCULATION_RESULT_ARCHIVAL_POLICY.md). The common run-manifest, result-summary, validation-report, and 14-field source-control contract is defined by [central RCRPS v1.0.1](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md). This document retains only the project's immutable run-bundle and QFT-specific provenance requirements.
+The shared requirements for native-file archival, extract-before-upload, run provenance, checksums, remote verification, and separation of archival from scientific validation are defined by the [central Calculation-result Archival Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/CALCULATION_RESULT_ARCHIVAL_POLICY.md). The common run-manifest, result-summary, validation-report, and 14-field source-control contract is defined by [central RCRPS v1.0.1](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md). This document retains only the project's immutable run-bundle and QFT-specific provenance requirements.
 
 ## 1. Immutable run bundle
 
